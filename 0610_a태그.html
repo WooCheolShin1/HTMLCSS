@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a태그</title>
+    <style>
+      a {
+        display: block;
+      }
+
+      a:link {
+        /*방문하지 않은 링크*/
+        color: red;
+        text-decoration: none;
+      }
+
+      a:visited {
+        /*방문한 링크*/
+        color: blue;
+      }
+
+      a:hover {
+        /*마우스를 올린 링크*/
+        color: green;
+        text-decoration: underline;
+      }
+
+      a:active {
+        /*마우스를 누르고 있을 떄*/
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://www.naver.com" target="_blank">네이버</a>
+    <!-- blank : -->
+    <a href="http://www.google.com" target="_new">구글</a>
+    <a href="http://www.google.com">구글</a>
+    <a href="./images/photo1.jpg" target="_blank">이미지1</a>
+    <a href="images/photo2.jpg">이미지2</a>
+    <a href="../HTMLCSS/images/beautytalk.jpg">이미지3</a>
+    <a
+      href="https://t1.daumcdn.net/daumtop_deco/images/pctop/2023/logo_daum.png"
+      >다음</a
+    >
+    <a href="mailto:sigon1112@naver.com" title="outlook">Send Email</a>
+  </body>
+</html>
