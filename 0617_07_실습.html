@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .bind, .bind2, .bind3{
+      width: 1200px;
+      border: solid 1px #000;
+      margin: 0 auto;
+    }
+
+    .bind2, .bind3 {
+      overflow: hidden;
+    }
+
+    .bind>div, .bind2>div, .bind3>div{
+      width: 20%;
+    }
+
+    .bind2>div, .bind3>div {
+      float: left;
+    }
+
+    .bind>div:first-child, .bind2>div:first-child, .bind3>div:first-child{
+      background-color: red;
+    }
+
+    .bind>div:nth-child(2), .bind2>div:nth-child(2), .bind3>div:nth-child(2){
+      background-color: blue;
+    }
+
+    .bind>div:nth-child(3), .bind2>div:nth-child(3), .bind3>div:nth-child(3){
+      background-color: green;
+    }
+
+    .two{
+      margin: 0 20%;
+    }
+  </style>
+</head>
+<body>
+  <div class="bind">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <br>
+  <div class="bind2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <br>
+  <div class="bind3">
+    <div>1</div>
+    <div class="two">2</div>
+    <div>3</div>
+  </div>
+</body>
+</html>
