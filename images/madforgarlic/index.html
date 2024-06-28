@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header{
+      
+    }
+    
+    .topMenu{
+      background-color: #666;
+    }
+
+    #wrap {
+      background-color: #161616;
+    }
+
+    .top {
+      width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .top ul {
+      float: right;
+    }
+
+    .top ul li {
+      float: left;
+      padding: 10px 0;
+      /* height: 30px; */
+    }
+
+    .top ul li a {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 10px;
+      line-height: 30px;
+      /* height: 30px;
+      display: block; */
+    }
+
+    .top ul li a::after{
+      content: " ";
+      padding: 0 10px;
+    }
+
+    /* .top ul li:nth-child(4) a{
+      background-color: #fff;
+      height: 20px;
+      color: #000;
+    } */
+
+    .top ul li a img{
+      vertical-align: middle;
+      z-index: -1;
+    }
+
+    .navMenu{
+      background-color: #161616;
+    }
+
+    .navMenu nav{
+      margin: 0 auto;
+      overflow: hidden;
+      width: 1000px;
+      height: 70px;
+    }
+
+    .navMenu nav ul {
+      float: right;
+    }
+
+    .navMenu nav ul li {
+      float: left;
+      padding: 0px 20px;
+      line-height: 70px;
+    }
+
+    .navMenu nav ul li a {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 10px;
+      line-height: 30px;
+    }
+
+    .visual {
+      height: 400px;
+      background: #9a9a9a url(./images/mad_17.jpg) center no-repeat;
+    }
+
+    .product
+    {
+      width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 30px 0;
+    }
+
+    .product li {
+      float: left;
+      margin-left:calc((100% - (235px * 4)) /3);
+    }
+
+    .product li:first-child{
+      margin-left: 0;
+    }
+
+    .product2{
+      width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .product2 > li{
+      float: left;
+      width: 50%;
+    }
+
+    .product2 > li div {
+      width: 80%;
+      margin: 0 auto;
+      color: #fff;
+    }
+
+    .product2 h3 {
+      padding-bottom: 20px;
+    }
+
+    .product2  > li div li {
+      padding-top: 5px;
+      font-size: 14px;
+    }
+
+    .product2 > li div li span:first-child{
+      font-weight: bold;
+    }
+
+    .product2 > li div li span:nth-child(2){
+      margin: 0 10px;
+    }
+
+    .product2 > li div li span:nth-child(3){
+      color: #9a9a9a;
+    }
+
+    footer{
+      border-top:1px solid #9a9a9a;
+    }
+
+    .foot{
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .foot ul{
+      display: inline-block;
+    }
+
+    .foot ul li {
+      float: left;
+      padding: 0 10px;
+    }
+
+    .foot address{
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="topMenu">
+        <div class="top">
+          <ul>
+            <li><a href="#">log in</a></li>
+            <li><a href="#">join</a></li>
+            <li><a href="#">cust</a></li>
+            <li><input type="text"></li>
+            <li><a href="#"><img src="./images/madforgarlic/images/zoom.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navMenu">
+        <nav>
+          <a href="#"><img src="./images/mad_12.gif" alt=""></a>
+          <ul>
+            <li><a href="#">brand</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">store</a></li>
+            <li><a href="#">membership</a></li>
+            <li><a href="#">event</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="visual">  
+      </div>
+      <ul class="product">
+        <li><img src="./images/mad_25.jpg" alt=""></li>
+        <li><img src="./images/mad_27.jpg" alt=""></li>
+        <li><img src="./images/mad_29.jpg" alt=""></li>
+        <li><img src="./images/mad_31.jpg" alt=""></li>
+      </ul>
+      <ul class="product2">
+        <li><img src="./images/mad_39.jpg" alt=""></li>
+        <!-- <li><img src="./images/mad_41.gif" alt=""></li> -->
+        <li>
+          <div>
+            <h3>공지사항</h3>
+            <ul>
+              <li><span>MAD SURPRISE</span>   <span>매월 지정일 매드서프라이즈!</span>   <span>2017-06-28</span></li>
+            </ul>
+            <ul>
+              <li><span>MAD CELEBRATION</span>   <span>생일, 결혼기념일 스페셜!</span>   <span>2017-06-28</span></li>
+            </ul>
+            <ul>
+              <li><span>MAD DAY</span>   <span>매월 마지막 주 수요일 기억하세요</span>   <span>2017-06-28</span></li>
+            </ul>
+            <ul>
+              <li><span>MAD 10% </span>   <span>멤버십이라면 언제나 10% 할인제공!</span>   <span>2017-06-28</span></li>
+            </ul>
+            <ul>
+              <li><span>MAD REWARDS</span>   <span>올수록 커지는 리워즈 혜택!</span>   <span>2017-06-28</span></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <div class="foot">
+        <ul>
+          <li>
+            서비스이용약관
+          </li>
+          <li>
+            개인정보처리방침
+          </li>
+          <li>
+            기기운영관리방침
+          </li>
+          <li>
+            고객서비스센터
+          </li>
+          <li>
+            관리자문의
+          </li>
+        </ul>
+        <address>
+          서울특별시 강남구 압구정로 222(신사동) ㈜엠에프지코리아
+        </address>
+        <p>COPYRIGHT ⓒ MFGKOREA ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
