@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .Gukdong
+    {
+      width: 1280px;
+      height: 650px;
+      margin: 0 auto;
+    }
+
+    .Gukdong ul:first-child, .Gukdong ul:nth-child(2)
+    {
+      width: 50%;
+      float: left;
+    }
+
+    .title{
+      text-align: center;
+      margin: 50px;
+    }
+
+    .Gukdong ul:first-child
+    {
+      height: 100%;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    ul:first-child li {
+      width: 300px;
+      height: 485px;
+      float: left;
+      margin: 10px;
+    }
+
+    ul:nth-child(2) li {
+      width: 300px;
+      height: 300px;
+      background-color: #f0f0f0;
+      position: relative;
+      float: left;
+      margin: 10px;
+    }
+
+    ul:first-child{
+      color: #fff;
+    }
+
+    ul:first-child h1 {
+      font-weight: bold;
+      font-size: 50px;
+      text-align: left;
+    }
+
+    ul:first-child li:first-child{
+      background-image: url(images/pr_img1.jpg);
+      background-size: 100%;
+    }
+
+    ul:first-child li:nth-child(2){
+      background-image: url(images/pr_img2.jpg);
+      background-size: 100%;
+    }
+
+    ul:first-child li div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    ul:nth-child(2) li div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    ul:nth-child(2) li div h1 {
+      font-weight: normal;
+    }
+
+    ul li div h1 span {
+      display: block;
+      font-weight: bold;
+    }
+
+    ul li div p:nth-of-type(1) {
+      margin: 10px 0;
+    }
+
+    .line {
+      position: absolute;
+      background-color: #07348c;
+    }
+
+    .line-top {
+      width: 100%;
+      height: 5px;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: 0 0;
+      transition: all 0.1s ease-in-out 0.3s;
+    }
+
+    .line-right {
+      width: 5px;
+      height: 100%;
+      right: 0;
+      transform: scaleY(0);
+      transform-origin: 0 0;
+      transition: all 0.1s ease-in-out 0.2s; 
+    }
+
+    .line-bottom{
+      width: 100%;
+      height: 5px;
+      bottom: 0;
+      transform: scaleX(0);
+      transform-origin: 100% 0;
+      transition: all 0.1s ease-in-out 0.1s;
+    }
+
+    .line-left{
+      width: 5px;
+      height: 100%;
+      left: 0;
+      transform: scaleY(0);
+      transform-origin: 0 100%;
+      transition: all 0.1s ease-in-out;
+    }
+
+    ul li:hover{
+      cursor: pointer;
+    }
+
+    ul:first-child li{
+      transform: scale(1);
+      transition: all 0.5s;
+      overflow: hidden;
+    }
+
+    ul:first-child li:hover{
+      background-size: 150%;
+      transition: all 0.5s;
+    }
+
+    /* ul:first-child li:not(:hover)
+    {
+      transition: background-size .3s ease;
+    } */
+
+    ul:nth-child(2) li:hover .line-top {
+      transform: scaleX(1);
+      transition: all 0.1s ease-in-out;
+    }
+
+    ul:nth-child(2) li:hover .line-right {
+      transform: scaleY(1);
+      transition: all 0.1s ease-in-out 0.1s;
+    }
+
+    ul:nth-child(2) li:hover .line-bottom {
+      transform: scaleX(1);
+      transition: all 0.1s ease-in-out 0.2s;
+    }
+
+    ul:nth-child(2) li:hover .line-left {
+      transform: scaleY(1);
+      transition: all 0.1s ease-in-out 0.3s;
+    }
+
+    ul li div img {
+      transition: all 0.5s;
+    }
+
+    ul li:hover div img {
+      transform: translateX(50px);
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <h1>PR Center</h1>
+    <p>세상에 없던 신기술을 개척하는 기업, 극도건설이 기술의 진보를 선도합니다</p>
+  </div>
+  <div class="Gukdong">
+    <ul>
+      <li>
+        <div>
+          <h1>극동뉴스</h1>
+          <p>극동건설의 다양한 소식을 가장 빠르게 전달해드립니다.</p>
+          <p><img src="images/next_bar_wh.png" alt=""></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h1>R&D</h1>
+          <p>끊임없는 신기술 개발과 혁신으로 극동건설이 건축기술의 진보를 위해 노력하고 있습니다</p>
+          <p><img src="images/next_bar_wh.png" alt=""></p>
+        </div>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <div>
+          <h1>언론속의 <span>극동</span></h1>
+          <p>언론에 소개되는 극동의 소식을 안내해드립니다.</p>
+          <p><img src="images/next_bar_bk.png" alt=""></p>
+        </div>
+        <span class="line line-top"></span>
+        <span class="line line-right"></span>
+        <span class="line line-bottom"></span>
+        <span class="line line-left"></span>
+      </li>
+      <li>
+        <div>
+          <h1>입주고객<span>A/S 안내</span></h1>
+          <p>스타클래스 입주 후 A/S 신청에 대한 안내 입니다. </p>
+          <p><img src="images/next_bar_bk.png" alt=""></p>
+        </div>
+        <span class="line line-top"></span>
+        <span class="line line-right"></span>
+        <span class="line line-bottom"></span>
+        <span class="line line-left"></span>
+      </li>
+      <li>
+        <div>
+          <h1>극동건설 <span>인재채용</span></h1>
+          <p>극동건설과 함께 성장해 나갈 인재를 모집합니다</p>
+          <p><img src="images/next_bar_bk.png" alt=""></p>
+        </div>
+        <span class="line line-top"></span>
+        <span class="line line-right"></span>
+        <span class="line line-bottom"></span>
+        <span class="line line-left"></span>
+      </li>
+      <li>
+        <div>
+          <h1>기업 <span>홍보영상</span></h1>
+          <p>극동건설의 다양한 홍보영상을 소개합니다.</p>
+          <p><img src="images/next_bar_bk.png" alt=""></p>
+        </div>
+        <span class="line line-top"></span>
+        <span class="line line-right"></span>
+        <span class="line line-bottom"></span>
+        <span class="line line-left"></span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
