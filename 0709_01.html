@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    li{
+      list-style: none;
+    }
+    
+    #wrap{
+      width: 1200px;
+      height: 100%;
+      float: left;
+      position: relative;
+    }
+
+    #wrap .service{
+      width: 20%;
+      height: 50%;
+      margin: 100px 150px;
+    }
+
+    #wrap .service p {
+      font-size: 117px;
+    }
+
+    #wrap .hov ul {
+      width: 80%;
+      border-top: 1px solid #333;
+      font-size: 27px;
+      height: 35px;
+      padding: 15px;
+    }
+
+    #wrap .hov ul li {
+      display: none;
+    }
+
+    #wrap .hov ul:last-child {
+      border-bottom: 0;
+    }
+
+    #wrap .hov {
+      width: 80%;
+      float: right;
+      position: absolute;
+      left: 800px;
+      top: 100px;
+    }
+
+    #wrap .hov ul{
+      transition: 1s;
+      cursor: pointer;
+    }
+
+    #wrap .hov ul:hover li {
+      transition: 1s;
+    }
+
+    #wrap .hov ul:hover{
+      height: 100px;
+    }
+    
+    #wrap .hov > ul:hover li{
+      display: block;
+      font-size: 14px;
+      color: #333;
+      padding: 20px 0;
+    }
+
+    /* #wrap .hov > ul:nth-child(2):hover li{
+      display: block;
+      font-size: 10px;
+      height: 100px;
+      transition: 1s;
+    }
+
+    #wrap .hov > ul:nth-child(3):hover li{
+      display: block;
+      font-size: 10px;
+      height: 100px;
+      transition: 1s;
+    } */
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="service">
+      <p>Our<br>Services</p>
+    </div>
+    <div class="hov">
+      <ul>UX / UI
+        <li>
+          Concept Proposal / UX Planning /  UI Design
+        </li>
+      </ul>
+      <ul>Motion
+        <li>
+          Scenario Planning / 2D Motion graphic Design /<br> 3D Modeling & Animation / 3D VFX
+        </li>
+      </ul>
+      <ul>Production
+        <li>
+          Pre-Production / Production / Post-Production
+        </li>
+      </ul>
+      <ul></ul>
+    </div>
+</body>
+</html>

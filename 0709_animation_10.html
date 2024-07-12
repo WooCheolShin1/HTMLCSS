@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      .one{
+        position: relative;
+      }
+
+      .one img{
+        background: #f00;
+        border-radius: 80%;
+        animation-name: scroll;
+      }
+
+      .one p{
+        left: 60px;
+        top: 60px;
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+      }
+
+      .scroll {
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 10s;
+      }
+
+      @keyframes scroll {
+        0%
+        {
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <img src="images/scroll_down.png" alt="" class="scroll">
+      <p>↓</p>
+    </div>
+  </body>
+</html>
