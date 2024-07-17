@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    .review{
+      width: 1500px;
+      height: 500px;
+      float: left;
+      margin: 0 auto;
+    }
+
+    .review ul{
+      width: 50%;
+    }
+
+    .review ul li{
+      
+    }
+
+    .flex1, .flex2{
+      display: flex;
+      float: left;
+    }
+
+    .flex1 li, .flex2 li{
+      display: inline-block;
+      vertical-align: middle;
+      margin: 11px;
+      position: relative;
+    }
+
+    .flex1 li img:nth-child(2),
+    .flex1 li img:nth-child(3),
+    .flex2 li img:first-child,
+    .flex2 li img:nth-child(2){
+      width: 215px;
+      height: 215px;
+      margin: 15px 0;
+    }
+
+    .flex1 li img:nth-child(3){
+      margin-left: 15px;
+    }
+
+    .flex1 li img:nth-child(1),
+    .flex2 li img:nth-child(3){
+      width: 452px;
+      height: 226px;
+    }
+
+    .flex1 ul:last-child li img,
+    .flex2 ul:last-child li img{
+      width: 215px;
+      height: 463px;
+    }
+
+    .flex1-1 img{
+      left: -70px;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="review">
+    <ul class="flex1">
+      <li>
+        <img src="images/review1.jpg" alt="">
+        <img src="images/review2.jpeg" alt="">
+        <img src="images/review3.jpeg" alt="">
+      </li>
+      <ul>
+        <li class="flex1-1">
+          <img src="images/review4.jpg" alt="">
+        </li>
+      </ul>
+    </ul>
+    <ul class="flex2">
+      <li>
+        <img src="images/review5.jpg" alt="">
+        <img src="images/review6.jpeg" alt="">
+        <img src="images/review7.jpeg" alt="">
+      </li>
+      <ul>
+        <li class="flex2-1">
+          <img src="images/review8.jpeg" alt="">
+        </li>
+      </ul>
+    </ul>
+  </div>
+</body>
+</html>

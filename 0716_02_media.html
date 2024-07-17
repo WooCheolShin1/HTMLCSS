@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    video{
+      overflow: hidden;
+      position: relative;
+    }
+
+    .vid{
+      text-align: center;
+      color: #fff;
+      top: 0;
+      margin: 500px 500px;
+      position: absolute;
+    }
+
+    .vid p:last-child{
+      font-size: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <video controls autoplay>
+    <source src="video/main.mp4" type="video/mp4">
+  </video>
+  <div class="vid">
+    <p>어나더하우스<p>
+    <p>사람을 좋아하는 LG전자가 여행을 좋아하는 당신을 위해 준비한<br>
+      어나더하우스로 여행을 떠나보세요</p>
+  </div>
+</body>
+</html>
