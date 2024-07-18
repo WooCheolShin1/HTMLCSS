@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex-container{
+      width: 500px;
+      height: 300px;
+      color: #000;
+      line-height: 75px;
+      margin: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .item, .item2, .item3 {
+      flex: 1 1 30%;
+    }
+
+    .flex-container > .item{
+      background: red;
+    }
+
+    .flex-container>div{
+      transition: flex-basis 0.5s;
+      cursor: pointer;
+    }
+
+    .flex-container > .item:hover,
+    .flex-container > .item2:hover,
+    .flex-container > .item3:hover{
+      flex-basis: 60%;
+    }
+
+    .flex-container > .item:not(:hover),
+    .flex-container > .item2:not(:hover),
+    .flex-container > .item3:not(:hover){
+      flex-basis: 20%;
+    }
+
+    .flex-container > .item2{
+      background: yellow;
+    }
+
+    .flex-container > .item3{
+      background: green;
+    }
+
+   </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+  </div>
+</body>
+</html>
