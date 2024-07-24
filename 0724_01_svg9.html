@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    section{
+      position: relative;
+      width: 960px;
+      height: 640px;
+    }
+
+    svg{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    section p {
+      clip-path: url(#path1);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <p><img src="images/photo2.jpg" alt="photo2"></p>
+    <svg>
+      <clipPath id="path1" clipPathUnits="objectBoundingBox">
+        <path class="st0" d="M0.06,0.58c-0.02-0.05-0.02-0.13,0-0.18l0.14-0.3C0.22,0.04,0.28,0,0.34,0l0.32,0C0.72,0,0.78,0.04,0.8,0.09
+        l0.15,0.32c0.02,0.05,0.02,0.13,0,0.18L0.79,0.91C0.77,0.96,0.7,1,0.65,1H0.33C0.27,1,0.21,0.96,0.19,0.91L0.06,0.58z"/>
+      </clipPath>
+    </svg>
+  </section>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  img{
+    object-fit: cover;
+  }
+
+  #wrap .content ul li {
+    position: relative;
+  }
+
+  #wrap .content ul li a p {
+    position: absolute;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  #wrap .content ul:nth-child(1) li:nth-child(2) a p,
+  #wrap .content ul:nth-child(2) li:nth-child(1) a p,
+  #wrap .content ul:nth-child(2) li:nth-child(3) a p{
+    top: 350px;
+  }
+
+  #wrap .content ul:nth-child(1) li:nth-child(1) a p,
+  #wrap .content ul:nth-child(1) li:nth-child(3) a p,
+  #wrap .content ul:nth-child(2) li:nth-child(2) a p{
+    top: 490px;
+  }
+
+  #wrap{
+    width: 1180px;
+    height: 1120px;
+    margin: 30px auto;
+  }
+
+  #wrap .content ul:first-child,
+  #wrap .content ul:nth-child(2){
+    display: flex;
+    gap: 20px;
+  }
+
+  #wrap .content ul:nth-child(2){
+    margin-top: 20px;
+  }
+
+  #wrap .content ul:nth-child(2) li:nth-child(2){
+    position: relative;
+  }
+
+  #wrap .content ul:nth-child(2) li:nth-child(2){
+    bottom: 140px;
+  }
+
+  #wrap .content ul li:hover img{
+    object-fit: cover;
+    width: 120%;
+    overflow: hidden;
+  }
+
+</style>
+<body>
+  <div id="wrap">
+    <div class="content">
+      <ul>
+        <li>
+          <a href="">
+            <img src="images/koreacompany01.jpg" alt="">
+            <p>팬데믹 이전으로 부활한 CES 2024</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="images/koreacompany02.jpg" alt="">
+            <p>닛산, 항상 도전한다</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="images/koreacompany03.jpg" alt="">
+            <p>포뮬러 E 백스테이지</p>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="">
+            <img src="images/koreacompany04.jpg" alt="">
+            <p>지속 가능한 환경을 위한 지속 불가능한 규제</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="images/koreacompany05.jpg" alt="">
+            <p>포뮬러 E 시즌 10 프리뷰</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="images/koreacompany06.jpg" alt="">
+            <p>챗GPT 이후… 2024년 우리가 주목할 기술</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

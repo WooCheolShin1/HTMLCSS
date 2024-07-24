@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    svg{
+      width: 1000px;
+      height:2000px;
+    }
+    
+    svg path{
+      fill: none;
+      stroke-width: 1px;
+      stroke: #000;
+      transform: scale(50);
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+      animation: any 5s infinite;
+      stroke-linecap: round;
+    }
+
+    @keyframes any{
+      0%{
+        stroke-dashoffset: 100;
+      }
+
+      100%{
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg>
+      <path class="st0" d="M12,14c-0.83,0-1.54-0.29-2.12-0.88C9.29,12.54,9,11.83,9,11V5c0-0.83,0.29-1.54,0.88-2.12
+      C10.46,2.29,11.17,2,12,2s1.54,0.29,2.12,0.88S15,4.17,15,5v6c0,0.83-0.29,1.54-0.88,2.12C13.54,13.71,12.83,14,12,14z M11,21v-3.08
+      c-1.73-0.23-3.17-1.01-4.3-2.32S5,12.75,5,11h2c0,1.38,0.49,2.56,1.46,3.54S10.62,16,12,16s2.56-0.49,3.54-1.46S17,12.38,17,11h2
+      c0,1.75-0.57,3.28-1.7,4.6c-1.13,1.32-2.57,2.09-4.3,2.32V21H11z M12,12c0.28,0,0.52-0.1,0.71-0.29S13,11.28,13,11V5
+      c0-0.28-0.1-0.52-0.29-0.71C12.52,4.1,12.28,4,12,4s-0.52,0.1-0.71,0.29C11.1,4.48,11,4.72,11,5v6c0,0.28,0.1,0.52,0.29,0.71
+      S11.72,12,12,12z"/>
+  </svg>
+</body>
+</html>

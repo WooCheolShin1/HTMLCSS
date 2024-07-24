@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    .content{
+      height: 1120px;
+      width: 1180px;
+      margin: 0 auto;
+      font-size: 0;
+    }
+
+    .content > ul{
+      display: flex;
+      gap: 20px;
+    }
+
+    .content > ul li ul{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .content > ul li ul li{
+      font-size: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .content > ul li ul li p{
+      position: absolute;
+      bottom: 30px;
+      color: #fff;
+      padding: 0 30px;
+    }
+
+    .content > ul li:first-child ul li:first-child,
+    .content > ul li:nth-child(2) ul li:last-child,
+    .content > ul li:nth-child(3) ul li:first-child{
+      width: 380px;
+      height: 620px;
+    }
+
+    .content > ul li:first-child ul li:last-child,
+    .content > ul li:nth-child(2) ul li:first-child,
+    .content > ul li:nth-child(3) ul li:last-child{
+      width: 380px;
+      height: 480px;
+    }
+
+    .content > ul li ul li img{
+      transition: 0.5s;
+      width: 100%;
+    }
+
+    .content > ul li ul li:hover img{
+      overflow: hidden;
+      width: 120%;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <ul>
+      <li>
+        <ul>
+          <li>
+            <img src="images/koreacompany01.jpg" alt="">
+            <p>팬데믹 이전으로 부활한 CES 2024</p>
+          </li>
+          <li>
+            <img src="images/koreacompany04.jpg" alt="">
+            <p>팬데믹 이전으로 부활한 CES 2024</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li>
+            <img src="images/koreacompany02.jpg" alt="">
+            <p>팬데믹 이전으로 부활한 CES 2024</p>
+          </li>
+          <li>
+            <img src="images/koreacompany05.jpg" alt="">
+            <p>팬데믹 이전으로 부활한 CES 2024</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li>
+            <img src="images/koreacompany03.jpg" alt="">
+            <p>팬데믹 이전으로 부활한 CES 2024</p>
+          </li>
+          <li>
+            <img src="images/koreacompany06.jpg" alt="">
+            <p>팬데믹 이전으로 부활한 CES 2024</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

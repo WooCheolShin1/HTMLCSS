@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    svg {
+      width: 500px;
+      height: 500px;
+      border: 2px solid;
+    }
+
+    .mic path{
+      transform: scale(10);
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <svg>
+    <rect width="300" height="100" style="fill:none;stroke-width:3;stroke:rgb(0,0,0)" />
+  </svg>
+  <svg>
+    <rect x="10" y="10" width="300" height="100" fill="none"stroke-width="3"stroke="rgb(0,0,0)" />
+  </svg>
+  <svg width="100" height="100">
+    <circle cx="10" cy="10" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+    <circle cx="490" cy="10" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+    <circle cx="10" cy="490" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+    <circle cx="490" cy="490" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+  </svg>
+  <svg width="100" height="100">
+    <g stroke="green" stroke-width="4" fill="yellow">
+      <circle cx="10" cy="10" r="40"/>
+      <circle cx="490" cy="10" r="40"/>
+      <circle cx="10" cy="490" r="40"/>
+      <circle cx="490" cy="490" r="40"/>
+    </g>
+  </svg>
+  <svg height="140" width="500">
+    <ellipse cx="200" cy="80" rx="100" ry="50"
+    style="fill:yellow;stroke:purple;stroke-width:2" />
+  </svg>
+  <svg height="210" width="500">
+    <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:20; stroke-linecap:round" />
+  </svg>
+  <svg height="210" width="500">
+    <polygon points="250,0 0,500 500,500" style="fill:lime;stroke:purple;stroke-width:1" />
+  </svg>
+  <svg height="210" width="500">
+    <polygon points="0,50 50,0 450,0 500,50 500,450 450,500 50,500 0,450" style="fill:lime;stroke:purple;stroke-width:1" />
+  </svg>
+  <svg height="200" width="500">
+    <polyline points="20,20 40,25 60,40 80,120 120,140 200,180"
+    style="fill:none;stroke:black;stroke-width:3" />
+  </svg>
+  <svg height="210" width="400">
+    <path d="M150 0 L75 200 L225 200 Z" />
+  </svg>
+  <svg height="210" width="400">
+    <path d="m150 0 l-75 200 l225 200 Z" />
+  </svg> 
+  <svg class="mic">
+    <polygon class="st0" points="166,263 118.31,238.4 71.01,263.74 79.67,210.78 40.96,173.63 94,165.5 117.37,117.2 141.49,165.13 
+	  194.65,172.44 156.52,210.19 " style="fill: lime; stroke:purple"/>
+    <path class="st0" d="M29.73,8.41"/>
+    <path class="st1" d="M12,14c0.83,0,1.54-0.29,2.12-0.88S15,11.83,15,11V5c0-0.83-0.29-1.54-0.88-2.12S12.83,2,12,2
+	s-1.54,0.29-2.12,0.88S9,4.17,9,5v6c0,0.83,0.29,1.54,0.88,2.12S11.17,14,12,14z" style="fill:#58CAEF;"/>
+  <path class="st2" d="M7,11H5c0,1.62,0.51,3.05,1.48,4.29l1.67-1.13C7.4,13.26,7,12.22,7,11z"/>
+  <path class="st3" d="M17.3,15.6c1.13-1.32,1.7-2.85,1.7-4.6h-2c0,1.38-0.49,  2.56-1.46,3.54C14.56,15.51,13.38,16,12,16
+	s-2.56-0.49-3.54-1.46c-0.12-0.12-0.21-0.25-0.31-0.37l-1.67,1.13c0.08,0.1,0.14,0.21,0.22,0.31c1.13,1.32,2.57,2.09,4.3,2.33v0.22
+	h2v-0.22C14.73,17.69,16.17,16.92,17.3,15.6z"/>
+  <rect x="11" y="18.15" class="st4" width="2" height="2.85"/>
+  </svg>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    section{
+      position: relative;
+    }
+
+    svg{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    section p {
+      clip-path: url(#path1);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <p><img src="images/photo1.jpg" alt="photo1"></p>
+    <svg>
+      <clipPath id="path1" clipPathUnits="userSpaceOnUse">
+      <!-- <clipPath id="path1" clipPathUnits="objectBoundingBox"> -->
+          <path class="st0" d="M605.6,43.22C591.32,19.72,557.12,0.5,529.62,0.5H301.88c-27.5,0-61.69,19.22-75.98,42.72L113.98,227.28
+          c-14.29,23.5-14.29,61.95,0,85.44L225.9,496.78c14.29,23.5,48.48,42.72,75.98,42.72h227.75c27.5,0,61.69-19.22,75.98-42.72
+          l111.92-184.06c14.29-23.5,14.29-61.95,0-85.44L605.6,43.22z"/>
+      </clipPath>
+    </svg>
+  </section>
+</body>
+</html>

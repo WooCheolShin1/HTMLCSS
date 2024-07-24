@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    svg{
+      width: 500px;
+      height: 500px;
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+    }
+
+    svg:hover{
+      animation: any 1s forwards;
+    }
+
+    svg:not(:hover){
+      animation: any2 1s;
+    }
+
+    @keyframes any{
+      0%{
+        stroke-dashoffset: 1200;
+      }
+
+      100%{
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes any2{
+      0%{
+        stroke-dashoffset: 0;
+      }
+
+      100%{
+        stroke-dashoffset: 1200;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg>
+    <rect x="10" y="10" width="300" height="300" style="fill:none;stroke-width:3;stroke:rgb(0,0,0)" />
+  </svg>
+</body>
+</html>

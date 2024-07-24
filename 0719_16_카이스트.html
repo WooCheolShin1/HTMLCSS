@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+
+    #wrap{
+      width: 1800px;
+      height: 824px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 432px);
+      grid-template-rows: repeat(2, 400px);
+    }
+
+    #wrap>div{
+      margin: 11px;
+    }
+
+    #wrap>div p{
+      width: 100%;
+      height: 100%;
+    }
+
+    #wrap>div p img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      filter: brightness(70%);
+    }
+
+    .kaist1{
+      grid-column: 1 / span 2;
+      font-size: 18px;
+      padding: 0 0 0 60px;
+    }
+
+    .kaist1 h1{
+      font-size: 58px;
+      margin-bottom: 20px;
+    }
+
+    .kaist1 p span{
+      color: #00a287;
+      font-weight: 700;
+    }
+
+    .kaist3{
+      grid-row: 2;
+      grid-column: 1 / span 2;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="kaist1">
+      <h1>PROGRAM</h1>
+      <p><span>KAIST GGGS</span>에서는 녹색성장과 지속가능성 문제해결을 위해<br>탄소중립기후기술 및 정책-금융에 대한 통섭적인 이해를 갖춘<br>국가 핵심인재를 양성합니다.</p>
+    </div>
+    <div class="kaist2">
+      <p><img src="images/kaist1.png" alt=""></p>
+    </div>
+    <div class="kaist3">
+      <p><img src="images/kaist3.png" alt=""></p>
+    </div>
+    <div class="kaist4">
+      <p><img src="images/kaist2.png" alt=""></p>
+    </div>
+    <div class="kaist5">
+     <p><img src="images/kaist_thumb.png" alt=""></p>
+    </div>
+    <div class="kaist6">
+      <p><img src="images/kaist4.png" alt=""></p>
+    </div>
+  </div>
+</body>
+</html>
