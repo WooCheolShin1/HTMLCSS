@@ -20,12 +20,9 @@
     text-decoration: none;
   }
 
-  img{
-    object-fit: cover;
-  }
-
   #wrap .content ul li {
     position: relative;
+    overflow: hidden;
   }
 
   #wrap .content ul li a p {
@@ -52,6 +49,7 @@
     width: 1180px;
     height: 1120px;
     margin: 30px auto;
+    font-size: 0;
   }
 
   #wrap .content ul:first-child,
@@ -72,10 +70,27 @@
     bottom: 140px;
   }
 
+  #wrap .content ul li img{
+    transition: 0.5s;
+    width: 100%;
+  }
+
   #wrap .content ul li:hover img{
-    object-fit: cover;
     width: 120%;
-    overflow: hidden;
+  }
+
+  #wrap .content ul:first-child li:first-child,
+  #wrap .content ul:first-child li:nth-child(3),
+  #wrap .content ul:nth-child(2) li:nth-child(2) {
+    width: 380px;
+    height: 620px;
+  } 
+
+  #wrap .content ul:first-child li:nth-child(2),
+  #wrap .content ul:nth-child(2) li:nth-child(1),
+  #wrap .content ul:nth-child(2) li:nth-child(3){
+    width: 380px;
+    height: 480px;
   }
 
 </style>
