@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    ul.random{
+      width: 90%;
+      max-width: 1884px;
+      margin: 0 auto;
+      height: 360px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    ul.random li{
+      width: 25%;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    ul.random li p{
+      color: #fff;
+      font-weight: bold;
+    }
+
+    ul.random li p:first-child{
+      font-size: 36px;
+      margin: 50px 0 0 50px;
+    }
+
+    ul.random li p:nth-child(2),
+    ul.random li img{
+      margin: 10px 50px;
+      display: none;
+    }
+
+    ul.random li img{
+      width: 40px;
+    }
+
+    ul.random li:first-child{
+      background-image: url(images/삼양/화학.jpg);
+    }
+
+    ul.random li:nth-child(2){
+      background-image: url(images/삼양/식품.png);
+    }
+
+    ul.random li:nth-child(3){
+      background-image: url(images/삼양/의약바이오.jpg);
+    }
+
+    ul.random li:nth-child(4){
+      background-image: url(images/삼양/패키징.jpg);
+    }
+
+    @media screen and (min-width:1024px) {
+      ul.random li:hover p:nth-child(2),
+      ul.random li:hover img{
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      ul.random li{
+        width: 50%;
+        display: flex;
+        height: 250px;
+        flex-direction: column;
+      }
+
+      ul.random li p:first-child{
+        font-size: 30px;
+      }
+
+      ul.random li p:nth-child(2){
+        display: none;
+      }
+
+      ul.random li img{
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      ul.random li{
+        width: 100%;
+        height: 170px;
+        background-position: 50%;
+      }
+
+      ul.random li p:first-child{
+        font-size: 30px;
+      }
+
+      ul.random li p:nth-child(2){
+        display: none;
+      }
+
+      ul.random li img{
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ul class="random">
+      <li>
+        <p>화학</p>
+        <p>언제나 편리하게</p>
+        <img src="images/삼양/arrow.svg" alt="">
+      </li>
+      <li>
+        <p>식품</p>
+        <p>누구나 풍요롭게</p>
+        <img src="images/삼양/arrow.svg" alt="">
+      </li>
+      <li>
+        <p>의약바이오</p>
+        <p>오래도록 건강하게</p>
+        <img src="images/삼양/arrow.svg" alt="">
+      </li>
+      <li>
+        <p>패키징</p>
+        <p>어디서나 즐겁게</p>
+        <img src="images/삼양/arrow.svg" alt="">
+      </li>
+  </ul>
+</body>
+</html>

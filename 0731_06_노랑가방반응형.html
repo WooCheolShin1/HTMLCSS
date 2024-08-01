@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    div.con {
+      width: 100%;
+      max-width: 1480px;
+      height: 440px;
+      margin: 50px auto;
+      display: flex;
+    }
+
+    div.con > div {
+      float: left;
+    }
+
+    div.con div.bg {
+      width: 50%;
+      height: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    div.con div.txt_wrap {
+      width: calc(100% - 720px);
+    }
+
+    /* div.con div.bg img {
+      width: 100%;
+      height: 100%;
+    } */
+
+    div.con div.txt {
+      width: 440px;
+      height: 440px;
+      padding-top: 200px;
+      box-sizing: border-box;
+      margin-left: 100px;
+    }
+
+    div.con:nth-child(2) div.txt, div.con:nth-child(4) div.txt {
+      margin-left: 0;
+      margin-right: 100px;
+      float: right;
+    }
+
+    @font-face {
+      font-family: Arita;
+      src: url(webfonts/Arita-buriHL.otf);
+    }
+
+    h3{
+      color:gray;
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+
+    h1{
+      color:#000;
+      font-size: 40px;
+      font-family: Arita;
+      font-weight: bold;
+    }
+
+    h2{
+      color: rgb(255, 201, 101);
+      font-size: 40px;
+      font-weight: bold;
+      font-family: Arita;
+    }
+
+    @media screen and (max-width:1024px){
+      div.con{
+        width: 100%;
+        height: 100%;
+      }
+
+      div.con div.bg{
+        width: 60%;
+        max-height: calc(100% / 4);
+      }
+
+      div.con div.bg img{
+        width: 100%;
+        height: 300px;
+      }
+
+      div.con div.txt_wrap{
+        width: 40%;
+      }
+
+      div.con div.txt{
+        padding-top: 100px;
+      }
+
+      h3{
+        font-size: 16px;
+      }
+
+      h1{
+        font-size: 22px;
+      }
+
+      h2{
+        font-size: 22px;
+      } 
+      div.con:nth-child(2) div.txt, div.con:nth-child(4) div.txt{
+        margin-right: 0px;
+        float: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="con">
+    <div class="bg">
+      <img src="./images/bg_story_1.jpg" alt="story">
+    </div>
+    <div class="txt_wrap">
+      <div class="txt">
+          <h3>여행의 새로운 가치를 알립니다.</h3>
+          <h1>가치를 전달하는 여행</h1>
+          <h2>Value-Creating</h2>
+      </div>
+    </div>
+  </div>
+  <div class="con">
+    <div class="txt_wrap">
+      <div class="txt">
+          <h3>고객의, 고객에 의한, 고객을 위한</h3>
+          <h1>신뢰를 받는 여행</h1>
+          <h2>Trustworthy</h2>
+      </div>
+    </div>
+    <div class="bg">
+      <img src="./images/bg_story_2.jpg" alt="story">
+    </div>
+  </div>
+  <div class="con">
+    <div class="bg">
+      <img src="./images/bg_story_3.jpg" alt="story">
+    </div>
+    <div class="txt_wrap">
+      <div class="txt">
+          <h3>일상의 가장 반짝이는 순간을 만듭니다</h3>
+          <h1>즐거움을 선사하는 여행</h1>
+          <h2>Joyful</h2>
+      </div>
+    </div>
+  </div>
+  <div class="con">
+    <div class="txt_wrap">
+      <div class="txt">
+          <h3>다양한 여행상품으로 여행 문화를 선도합니다</h3>
+          <h1>혁신적인 여행</h1>
+          <h2>Innovative</h2>
+      </div>
+    </div>
+    <div class="bg">
+      <img src="./images/bg_story_4.jpg" alt="story">
+    </div>
+  </div>
+</body>
+</html>

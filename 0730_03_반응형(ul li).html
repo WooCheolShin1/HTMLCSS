@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+    
+    .wrap{
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .wrap h1{
+      padding: 20px 40px;
+    }
+
+    .wrap_image {
+      width: 100%;
+    }
+
+    .wrap_image ul li{
+      float: left;
+      /* justify-content: space-around;
+      display: flex; */
+      margin: 20px 40px;
+      position: relative;
+      transition: 1s;
+    }
+
+    .wrap_image ul li img{
+      width: 240px;
+      height: 360px;
+    }
+
+    .wrap_image ul li p{
+      top: 50px;
+      padding: 0 20px;
+      position: absolute;
+    }
+
+    .wrap_image ul li p strong{
+      font-size: 30px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .wrap_image ul li p:last-child{
+      top: 100px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width:768px){
+      .wrap_image ul li{
+        margin: 20px 20px;
+      }
+    }
+
+    @media screen and (max-width:560px){
+      .wrap_image ul li{
+        margin: 20px 10px;
+      }
+
+      .wrap_image ul li img{
+        width: 155px;
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>강좌종목안내</h1>
+    <div class="wrap_image">
+      <ul>
+        <li>
+          <img src="images/반응형/수영.png" alt="">
+          <p><strong>수영</strong></p>
+          <p>#다이어트 #유산소 #재활</p>
+        </li>
+        <li>
+          <img src="images/반응형/볼링.png" alt="">
+          <p><strong>볼링</strong></p>
+          <p>#여가활동 #구기종목</p>
+        </li>
+        <li>
+          <img src="images/반응형/헬스.png" alt="">
+          <p><strong>헬스</strong></p>
+          <p>#다이어트 #체력증진 #근력운동</p>
+        </li>
+        <li>
+          <img src="images/반응형/스피닝.png" alt="">
+          <p><strong>스피닝</strong></p>
+          <p>#단기다이어트 #유산소</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

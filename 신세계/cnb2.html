@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    h1{
+      text-align: center;
+      padding: 20px 50px;
+    }
+
+    #wrap{
+      max-width: 970px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    #wrap ul{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    #wrap ul li{
+      width: 311px;
+      height: 420px;
+      background-size: cover;
+      position: relative;
+      background-position: 50%;
+      z-index: 1;
+    }
+
+    #wrap ul li:nth-child(1){
+      background-image: url(CNB-images/bg_info_1.jpg);
+    }
+
+    #wrap ul li:nth-child(2){
+      background-image: url(CNB-images/bg_info_2.jpg);
+    }
+
+    #wrap ul li:nth-child(3){
+      background-image: url(CNB-images/bg_info_3.jpg);
+    }
+
+    .bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: rgba(0,0,0,0.5);
+      cursor: pointer;
+    }
+
+    #wrap .bg p{
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    #wrap .bg p:first-child{
+      margin-top: 150px;
+      font-size: 30px;
+    }
+
+    #wrap .bg p:nth-child(2){
+      margin-top: 16px;
+      font-size: 15px;
+    }
+
+    #wrap .bg:hover{
+      background: rgba(0,0,0,0.8);
+    }
+
+    #wrap .bg:hover p:first-child{
+      color: #c76f53;
+    }
+
+    .result{
+      width: calc(100% - 17px);
+      background-color: #c76f53;
+      margin: 20px 0;
+      padding: 40px 0;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .result p:first-child{
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width:960px) {
+      h1{
+        font-size: 18px;
+        text-align: left;
+      }
+
+      #wrap ul li{
+        width: 100%;
+        height: 120px;
+      }
+      #wrap .bg p:first-child{
+        margin-top: 20px;
+        font-size: 18px;
+      }
+
+      br{
+        content:'';
+        display: inline-block;
+        padding: 0 2px;
+      }
+
+      .result{
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width:637px){
+      h1{
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>명확한 비전과 전략으로 최고의 투자 가치를 실현하는 신세계푸드</h1>
+  <div id="wrap">
+    <ul>
+      <li>
+        <div class="bg">
+          <p>경영정보</p>
+          <p>주주 및 이사회 구성을<br>안내해 드립니다.</p>
+        </div>
+        
+      </li>
+      <li>
+        <div class="bg">
+          <p>재무정보</p>
+          <p>영업현황 및 재무제표를<br>안내해 드립니다.</p>
+        </div>
+      </li>
+      <li>
+        <div class="bg">
+          <p>주식정보</p>
+          <p>주가정보를<br>안내해 드립니다.</p>
+        </div>
+      </li>
+    </ul>
+    <div class="result">
+      <p>공시 및 공고</p>
+      <p>결산 공고 및 주주총회 결과를<br> 안내해 드립니다.</p>
+    </div>
+  </div>
+</body>
+</html>

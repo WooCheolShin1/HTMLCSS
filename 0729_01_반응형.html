@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrap{
+      width: 100%;
+      max-width: 1280px;
+      height: 300px;
+      background: red;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1280px){
+      .wrap{
+        background: blue;
+        height: 500px;
+      }
+    }
+
+    @media screen and (max-width: 1024px){
+      .wrap{
+        background: yellow;
+        height: 500px;
+      }
+    }
+
+    @media screen and (max-width: 768px){
+      .wrap{
+        background: green;
+        height: 500px;
+      }
+    }
+
+    @media screen and (max-width: 500px){
+      .wrap{
+        background: pink;
+        height: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+  </div>
+</body>
+</html>

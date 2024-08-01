@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    ul.lesson{
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
+      height: 360px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    ul.lesson li{
+      width: 20%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      color: #fff;
+    }
+
+    ul.lesson li p{
+      padding: 10px .20px;
+    }
+
+    ul.lesson li p:first-child{
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    ul.lesson li p:last-child{
+      font-size: 16px;
+    }
+
+    ul.lesson li:nth-child(1){
+      background-image: url(images/반응형/수영.png);
+    }
+
+    ul.lesson li:nth-child(2){
+      background-image: url(images/반응형/볼링.png);
+    }
+    
+    ul.lesson li:nth-child(3){
+      background-image: url(images/반응형/헬스.png);
+    }
+
+    ul.lesson li:nth-child(4){
+      background-image: url(images/반응형/스피닝.png);
+    }
+
+    @media screen and (max-width:768px) {
+      ul.lesson{
+        width: 432px;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      ul.lesson li{
+        width: 150px;
+        height: 225px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ul class="lesson">
+    <li>
+      <p>수영</p>
+      <p>#다이어트 #유산소 #재활</p>
+    </li>
+    <li>
+      <p>수영</p>
+      <p>#다이어트 #유산소 #재활</p>
+    </li>
+    <li>
+      <p>수영</p>
+      <p>#다이어트 #유산소 #재활</p>
+    </li>
+    <li>
+      <p>수영</p>
+      <p>#다이어트 #유산소 #재활</p>
+    </li>
+  </ul>
+</body>
+</html>

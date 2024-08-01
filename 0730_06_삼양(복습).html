@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    ul.cardList{
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      transition: 0.5s ease-in;
+    }
+
+    ul.cardList li{
+      flex: 1 0 20%;
+      height: 360px;
+      position: relative;
+      transition: 0.5s;
+      overflow: hidden;
+    }
+
+    ul.cardList li a{
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      transform: scale(1);
+      transition: 0.5s;
+    }
+
+    ul.cardList li a p {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+    }
+
+    ul.cardList li a p:first-child{
+      font-size: 36px;
+      padding: 50px 0 0 50px;
+      font-weight: bold;
+    }
+
+    ul.cardList li a p:nth-child(2){
+      font-size: 16px;
+      padding: 10px 50px;
+    }
+
+    ul.cardList li a p:nth-child(3){
+      padding: 10px 50px;
+    }
+
+    ul.cardList li a .bg{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      transform: scale(1);
+      transition: 0.5s;
+    }
+
+    ul.cardList li:nth-child(1) .bg{
+      background-image: url(images/삼양/화학.jpg);
+    }
+
+    ul.cardList li:nth-child(2) .bg{
+      background-image: url(images/삼양/식품.png);
+    }
+
+    ul.cardList li:nth-child(3) .bg{
+      background-image: url(images/삼양/의약바이오.jpg);
+    }
+
+    ul.cardList li:nth-child(4) .bg{
+      background-image: url(images/삼양/패키징.jpg);
+    }
+
+    ul.cardList li:hover .bg{
+      transform: scale(1.2);
+    }
+    
+    ul.cardList li a:after{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+
+    ul.cardList li:nth-child(1) a::after{
+      background-color: rgba(0, 163, 241, 0.84);
+    }
+
+    ul.cardList li:nth-child(2) a::after{
+      background-color: rgba(219, 92, 41, 0.79);
+    }
+
+    ul.cardList li:nth-child(3) a::after{
+      background-color: rgba(139, 185, 6, 0.76);
+    }
+
+    ul.cardList li:nth-child(4) a::after{
+      background-color: rgba(0, 163, 241, 0.64);
+    }
+
+    ul.cardList li:hover a:after{
+      opacity: 0.6;
+    }
+
+    @media screen and (max-width: 1530px) {
+      ul.cardList{
+        max-width: 1280px;
+      }
+
+      ul.cardList li:hover a{
+        transform: scale(1);
+      }
+
+      ul.cardList li:hover a:after{
+        opacity: 0;
+      }
+    }
+
+    @media screen and (max-width: 1024px){
+      ul.cardList{
+        width: 90%;
+      }
+
+      ul.cardList li {
+        flex: 1 0 50%;
+        height: 250px;
+      }
+      
+      ul.cardList li:nth-child(1) .bg{
+        background-image: url(images/삼양/화학.jpg);
+      }
+
+      ul.cardList li:nth-child(2) .bg{
+        background-image: url(images/삼양/식품.png);
+      }
+
+      ul.cardList li:nth-child(3) .bg{
+        background-image: url(images/삼양/의약바이오.jpg);
+      }
+
+      ul.cardList li:nth-child(4) .bg{
+        background-image: url(images/삼양/패키징.jpg);
+      }
+
+      ul.cardList li a p:nth-child(2){
+        display: none;
+      }
+    }
+
+  @media screen and (max-width: 768px) {
+    ul.cardList li{
+      flex: 1 0 100%;
+      height: 175px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <ul class="cardList">
+    <li>
+      <a href="#">
+        <p>화학</p>
+        <p>언제나 편리하게</p>
+        <p><img src="images/삼양/arrow.svg" alt=""></p>
+        <div class="bg">
+
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <p>식품</p>
+        <p>누구나 풍요롭게</p>
+        <p><img src="images/삼양/arrow.svg" alt=""></p>
+        <div class="bg">
+          
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <p>의약바이오</p>
+        <p>오래도록 건강하게</p>
+        <p><img src="images/삼양/arrow.svg" alt=""></p>
+        <div class="bg">
+          
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <p>패키징</p>
+        <p>어디서나 즐겁게</p>
+        <p><img src="images/삼양/arrow.svg" alt=""></p>
+        <div class="bg">
+          
+        </div>
+      </a>
+    </li>
+  </ul>
+</body>
+</html>

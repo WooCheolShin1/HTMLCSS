@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    h1{
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+      height: 150px;
+      font-size: 40px;
+    }
+
+    p {
+      text-align: center;
+      margin: 50px 0;
+      font-size: 22px;
+      color: #444444;
+      font-weight: bold;
+    }
+
+    h1::after{
+      margin-top: 100px;
+      content: '';
+      width: 121px;
+      height: 4px;
+      background: #000;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+
+    .head {
+      width: 1440px;
+      margin: 0 auto;
+    }
+
+    .head ul{
+      width: 1280px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      gap: 40px;
+    }
+
+    .head ul li img{
+      height: 400px;
+      width: 620px;
+      border-radius: 40px;
+    }
+
+    .head ul li{
+      float: left;
+    }
+
+    @media screen and (max-width: 960px) {
+      h1{
+        font-size: 20px;
+        height: 25px;
+      }
+
+      h1::after{
+        content: none;
+      }
+
+      p{
+        font-size: 15px;
+        font-weight: normal;
+        margin: none;
+      }
+
+      br{
+       display: inline-block;
+       content: " ";
+       padding: 0 2px;
+      }
+
+      .head{
+        max-width: 100%;
+        width: 1000px;
+      }
+
+      .head ul {
+        width: auto;
+        gap: 10px;
+        padding: 0 20px;
+      }
+
+      .head ul li{
+        max-width: calc(50% - 5px);
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .head ul li img{
+        width: 100%;
+        max-width: 420px;
+        max-height: 300px;
+        height: 100%;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>생활 속에서 함께하는<br>식품 제조 선도 기업</h1>
+  <p>
+    신세계푸드는 글로벌 수준의 R&D센터와 식품 제조 인프라를 갖추고 있습니다.<br>
+    프리미엄 가정 간편식, 베이커리, Fresh Food, 대안식품 등을<br>
+    직접 연구개발 및 생산하며 식품시장을 선도해 가고 있습니다.
+  </p>
+  <div class="head">
+    <ul>
+      <li>
+        <img src="CNB-images/business_item_hotelCollection.jpg" alt="">
+      </li>
+      <li>
+        <img src="CNB-images/business_item_vecchiaEnuovo.jpg" alt="">
+      </li>
+      <li>
+        <img src="CNB-images/business_item_olbaan.jpg" alt="">
+      </li>
+      <li>
+        <img src="CNB-images/business_item_ywe.jpg" alt="">
+      </li>
+      <li>
+        <img src="CNB-images/business_item_betterMeat.jpg" alt="">
+      </li>
+      <li>
+        <img src="CNB-images/business_item_brand.jpg" alt="">
+      </li>
+      <li>
+        <img src="CNB-images/business_item_recette.jpg" alt="">
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
