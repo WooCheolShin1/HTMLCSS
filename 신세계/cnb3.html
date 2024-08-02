@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    h1{
+      border-bottom: 3px solid #333;
+      width: 280px;
+      word-break: break-all;
+      padding: 20px 0;
+      line-height: 1.5;
+      text-align: center;
+      display: flex;
+      margin: 0 auto;
+      position: relative;
+      font-size: 50px;
+    }
+
+    h1::after{
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      right: -26px;
+      width: 43px;
+      height: 38px;
+      background: url(CNB-images/icon_vs_ttl.png);
+    }
+
+    .cnb{
+      width: 100%;
+      padding: 100px 0;
+    }
+
+    .cnb ul {
+      width: 100%;
+      max-width: 940px;
+      gap: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+    .cnb ul li{
+      width: 450px;
+      height: 480px;
+      border-top-left-radius: 70px;
+      border-bottom-right-radius: 70px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .cnb ul li p{
+      background: rgba(0,0, 0, 0.3);
+      padding: 20px 0;
+    }
+
+    .cnb ul li p:first-child{
+      margin-top: 140px;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .cnb ul li p:nth-child(2){
+      font-size: 20px;
+    }
+
+    .cnb ul li:first-child{
+      background: url(CNB-images/bg_vs_value_1.jpg);
+      margin-top: -55px;
+    }
+
+    .cnb ul li:nth-child(2){
+      background: url(CNB-images/bg_vs_value_2.jpg);
+    }
+
+    .cnb ul li:nth-child(3){
+      background: url(CNB-images/bg_vs_value_3.jpg);
+      margin-top: -55px;
+    }
+
+    .cnb ul li:nth-child(4){
+      background: url(CNB-images/bg_vs_value_4.jpg);
+    }
+
+    @media screen and (max-width:960px) {
+      h1{
+        font-size: 22px;
+      }
+
+      br{
+        display: none;
+      }
+
+      .cnb ul li{
+        width: calc(50% - 20px);
+      }
+
+      .cnb ul li p:first-child{
+        font-size: 16px;
+      }
+
+      .cnb ul li p:nth-child(2){
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Core Value</h1>
+  <div class="cnb">
+    <ul>
+      <li>
+        <p>Taste & Quality</p>
+        <p>최선의 '품질'을 통해<br>
+          최상의 '맛'을 구현합니다</p>
+      </li>
+      <li>
+        <p>Convenience</p>
+        <p>보관/조리/폐기 전반에 걸친 고객 중심<br>마인드로<br>
+          최적화된 편의를 제공합니다.</p>
+      </li>
+      <li>
+        <p>Health & Wellness</p>
+        <p>고객의 건강과 라이프스타일을 지원하는<br>
+          맞춤형 푸드 옵션을 제공합니다.</p>
+      </li>
+      <li>
+        <p>Value</p>
+        <p>지구와 사회에 긍정적인 영향을 주는<br>
+          지속 가능하고 책임감 있는 사업을 이어갑니다.</p>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
