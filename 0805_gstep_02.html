@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    ul.practice{
+      width: 90%;
+      max-width: 1020px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 50px;
+    }
+
+    ul.practice li {
+      border-radius: 40px;
+    }
+
+    ul.practice li:first-child{
+      width: 490px;
+      height: 304px;
+      background-color: #00CAD8;
+      text-align: center;
+      color: #fff;
+      font-size: 46px;
+      letter-spacing: 15px;
+    }
+
+    ul.practice li:nth-child(2){
+      width: 490px;
+      height: 425px;
+      background-color: #15D886;
+      display: flex;
+      flex-wrap: wrap;
+      cursor: pointer;
+    }
+
+    ul.practice li:nth-child(3){
+      width: 490px;
+      height: 546px;
+      background-color: #CDF1F399;
+      color: #07B9C5;
+      text-align: center;
+      margin-top: -120px;
+    }
+
+    ul.practice li:nth-child(4){
+      width: 490px;
+      height: 425px;
+      background-color: #3393FF;
+      display: flex;
+      flex-wrap: wrap;
+      cursor: pointer;
+    }
+
+    ul.practice li:first-child p{
+      margin-top: 90px;
+    }
+
+    ul.practice li:nth-child(3) p{
+      margin-top: 160px;
+      font-size: 36px;
+    }
+
+    ul.practice li:nth-child(3) p:last-child{
+      margin-top: 16px;
+      font-size: 46px;
+      font-weight: bold;
+    }
+
+    ul.practice li:nth-child(2) p:first-child,
+    ul.practice li:nth-child(4) p:first-child{
+      color:#fff;
+      font-size: 36px;
+      font-weight: bold;
+      padding: 40px 30px;
+      margin-right: 20px;
+      height: 10%;
+    }
+
+    ul.practice li:nth-child(2) p:nth-child(2){
+      margin: 30px 90px;
+    }
+
+    ul.practice li:nth-child(4) p:nth-child(2){
+      margin: 30px 20px;
+    }
+
+    ul.practice li:nth-child(2) p:nth-child(3),
+    ul.practice li:nth-child(4) p:nth-child(3){
+      width: 100%;
+      text-align: right;
+      margin-right: 20px;
+    }
+
+    ul.practice li:nth-child(2) p:last-child,
+    ul.practice li:nth-child(4) p:last-child{
+      font-size: 20px;
+      padding: 0 40px;
+      color: #fff;
+      font-weight: normal;
+      word-break: keep-all;
+      height: 90%;
+      display: none;
+    }
+
+    ul.practice li:nth-child(2):hover{
+      background: url(https://www.gseps.com/images/main/short_hover_01.jpg) center center no-repeat;
+      background-size: cover;
+    }
+
+    ul.practice li:nth-child(4):hover{
+      background: url(https://www.gseps.com/images/main/short_hover_02.jpg) center center no-repeat;
+      background-size: cover;
+    }
+
+    ul.practice li:nth-child(2):hover p:nth-child(2),
+    ul.practice li:nth-child(4):hover p:nth-child(2){
+      content: url(https://www.gseps.com/images/icon/arrow_large_hover.svg);
+    }
+
+    ul.practice li:nth-child(2):hover p:nth-child(3),
+    ul.practice li:nth-child(4):hover p:nth-child(3){
+      display: none;
+    }
+
+    ul.practice li:nth-child(2):hover p:last-child,
+    ul.practice li:nth-child(4):hover p:last-child{
+      display: block;
+    }
+
+    @media screen and (max-width: 1130px) {
+      ul.practice{
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      ul.practice li{
+        width: 100%;
+      }
+
+      ul.practice li:first-child{
+        width: 100%;
+        height: 160px;
+      }
+      
+      ul.practice li:first-child p {
+        margin-top: 50px;
+      }
+
+      ul.practice li:first-child br{
+        display: none;
+      }
+
+      ul.practice li:nth-child(3){
+        width: 100%;
+        height: 265px;
+        order: 2;
+        margin-top: 0px;
+        letter-spacing: 1px;
+      }
+
+      ul.practice li:nth-child(3) p:first-child{
+        margin-top: 50px;
+        font-size: 30px;
+      }
+
+      ul.practice li:nth-child(3) p:nth-child(2){
+        font-size: 40px;
+      }
+
+      ul.practice li:nth-child(3) br:nth-child(2){
+        display: none;
+      }
+
+      ul.practice li:nth-child(2) p:first-child,
+      ul.practice li:nth-child(4) p:first-child{
+        font-size: 30px;
+      }
+
+      ul.practice li:nth-child(2) p:nth-child(2){
+        margin: 25px 90px;
+      }
+
+      ul.practice li:nth-child(4) p:nth-child(2){
+        margin: 25px 20px;
+      }
+
+      ul.practice li:nth-child(2) p:nth-child(3),
+      ul.practice li:nth-child(4) p:nth-child(3){
+        margin-top: 20px;
+        margin-right: 100px;
+      }
+
+      ul.practice li:nth-child(2) p:nth-child(3) img,
+      ul.practice li:nth-child(4) p:nth-child(3) img{
+        width: 150px;
+        height: 150px;
+      }
+
+      ul.practice li:nth-child(2){
+        width: 100%;
+        height: 327px;
+        order: 3;
+      }
+
+      ul.practice li:nth-child(4){
+        width: 100%;
+        height: 327px;
+        order: 4;
+      }
+    }
+    @media screen and (max-width: 811px){
+        ul.practice li {
+          width: 100%;
+        }
+
+        ul.practice li:first-child br{
+          display: block;
+        }
+
+        ul.practice li:first-child p{
+          font-size: 22px;
+          letter-spacing: 2px;
+        }
+
+        ul.practice li:nth-child(3) p:first-child {
+          font-size: 22px;
+        }
+
+        ul.practice li:nth-child(3) p:nth-child(2){
+          font-size: 28px;
+        }
+
+        ul.practice li:nth-child(3) br:nth-child(2){
+          display: block;
+        }
+
+        ul.practice li:nth-child(2) p:nth-child(2){
+          margin: 42px 110px;
+        }
+
+        ul.practice li:nth-child(4) p:nth-child(2){
+          margin: 42px;
+        }
+
+        ul.practice li:nth-child(2) p:nth-child(2) img,
+        ul.practice li:nth-child(4) p:nth-child(2) img{
+          width: 40px;
+          height: 40px;
+        }
+
+        ul.practice li:nth-child(2):hover p:nth-child(2),
+        ul.practice li:nth-child(4):hover p:nth-child(2){
+        content: url(https://www.gseps.com/images/icon/arrow_large_hover.svg);
+        width: 40px;
+        height: 40px;
+        }
+
+        ul.practice li:nth-child(2) p:nth-child(3),
+        ul.practice li:nth-child(4) p:nth-child(3){
+          margin-top: -100px;
+          margin-right: -100px;
+        }
+
+      ul.practice li:nth-child(2) p:nth-child(3) img,
+      ul.practice li:nth-child(4) p:nth-child(3) img{
+        max-width: 300px;
+        width: 100%;
+        max-height: 300px;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ul class="practice">
+    <li>
+      <p>GREEN<br> INNOVATION</p>
+    </li>
+    <li>
+        <p>탄소중립</p>
+        <p>
+          <img src="https://www.gseps.com/images/icon/arrow_large.svg" alt="">
+        </p>
+        <p>
+          <img src="https://www.gseps.com/images/icon/shortcut_01.png" alt="">
+        </p>
+        <p>
+          GS EPS는 재생에너지의 보급과 확산으로 온실가스 배출량을 감축하고 타 기업과 협력함으로써 탄소중립 달성이라는 목표를 실현해 가고 있습니다.
+        </p>
+    </li>
+    <li>
+     <p>
+        건강한 지구를 위해<br>
+     </p>
+     <p>
+      GS EPS는<br>친환경적인 혁신에<br> 앞장섭니다
+     </p>
+    </li>
+    <li>
+      <p>미래/벤처투자</p>
+      <p>
+        <img src="https://www.gseps.com/images/icon/arrow_large.svg" alt="">
+      </p>
+      <p>
+        <img src=https://www.gseps.com/images/icon/shortcut_02.svg alt="">
+      </p>
+      <p>
+        GS EPS는 친환경 미래 기술을 보유한 파트너사와 함께 미래성장동력을 지속적으로 확보하고 있습니다.
+      </p>
+    </li>
+  </ul>
+</body>
+</html>
