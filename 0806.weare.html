@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+
+    .weare{
+      width: 95%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .container{
+      margin: 30px 100px;
+      display: flex;
+    }
+
+    .container h2{
+      font-size: 42px;
+      font-weight: normal;
+      color: #3f51b5;
+      width: 20%;
+    }
+
+    .container p{
+      width: 605px;
+      margin-left: 20%;
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .container p br{
+      display: none;
+    }
+
+    .container p::before{
+      content: " ";
+      display: block;
+      background: #e0e0e0;
+      width: 2px;
+      left: 0;
+      height: 44px;
+      position: absolute;
+      margin-left: -10px;
+    }
+
+    .weare ul{
+      display: flex;
+      margin: 110px 100px;
+      gap: 20px;
+    }
+
+    .weare ul li{
+      text-align: center;
+    }
+
+    .weare ul li a img{
+      height: 52px;
+    }
+
+    .weare ul li a:nth-child(2) p:first-child{
+      margin: 29px 20px;
+      color: #3f51b5;
+    }
+
+    .weare ul li a:nth-child(2) p:nth-child(2){
+      font-size: 14px;
+      word-break: break-all;
+    }
+
+    hr{
+      width: 100%;
+      background: #e0e0e0;
+      justify-content: center;
+    }
+
+    .work{
+      width: 100%;
+    } 
+
+    .work h2{
+      margin: 30px 100px;
+      font-size: 42px;
+      font-weight: normal;
+      color: #3f51b5;
+    }
+
+    .workpicture{
+      width: 100%;
+    }
+
+    .workpicture ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .workpicture ul li{
+      width: 25%;
+      max-width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 1225px) {
+      .container{
+        flex-wrap: wrap;
+        margin: 30px 0;
+      }
+
+      .container h2{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .container p {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+      }
+
+      .container p br{
+        display: block;
+      }
+
+      .container p::before{
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 855px) {
+      .weare ul{
+        flex-wrap: wrap;
+        margin: 110px 0;
+      }
+
+      .weare ul li{
+        width: 100%;
+        margin-bottom: 52px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="weare">
+    <div class="container">
+      <h2>WE ARE</h2>
+      <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a<br> piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      </p>
+    </div>
+    <ul>
+      <li>
+        <a href="#"><img src="images/promo01.png" alt=""></a>
+        <a href="#">
+          <p>HOME</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="#"><img src="images/promo02.png" alt=""></a>
+        <a href="#">
+          <p>WE ARE</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="#"><img src="images/promo03.png" alt=""></a>
+        <a href="#">
+          <p>WORK</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="#"><img src="images/promo04.png" alt=""></a>
+        <a href="#">
+          <p>BLOG</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <div class="work">
+      <h2>WORK</h2>
+    </div>
+  </div>
+  <div class="workpicture">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="images/work01.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/work02.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/work03.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/work04.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/work05.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/work06.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/work07.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/work08.jpg" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
