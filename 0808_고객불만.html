@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .minwon {
+      width: 90%;
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 30px 0;
+      text-align: center;
+      background: #ddd;
+    }
+
+    .minwon > ul{
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+    }
+
+    .minwon > ul > li{
+      width: calc(75% / 5);
+      height: 305px;
+      background-color: #d2492c;
+      border-radius: 15px;
+      padding: 24px 13px 18px;
+    }
+
+    .minwon > ul > li::before{
+      content: "";
+      display: block;
+      width: 108px;
+      height: 100px;
+      margin: 0 auto 21px auto;
+      background: url(https://www.shinsegaefood.com/images/icon/icon_voc.png) no-repeat;
+    }
+
+    .minwon > ul > li:nth-child(2)::before{
+      background-position-x: -108px;
+    }
+
+    .minwon > ul > li:nth-child(3)::before{
+      background-position-x: -216px;
+    }
+
+    .minwon > ul > li:nth-child(4)::before{
+      background-position-x: -324px;
+    }
+
+    .minwon > ul > li:nth-child(5)::before{
+      background-position-x: -432px;
+    }
+
+    .minwon > ul > li p:nth-child(2){
+      list-style: circle;
+    }
+
+    .minwon > ul > li:first-child{
+      margin-left:15px;
+      background-color: #d2492c;
+    }
+
+    .minwon > ul > li:last-child{
+      margin-right: 15px;
+    }
+
+    .minwon > ul > li p{
+      color: #ecff96;
+      font-weight: bold;
+      font-size: 23px;
+    }
+
+    ul.bullet{
+      list-style: circle;
+    }
+  </style>
+</head>
+<body>
+  <div class="minwon">
+    <h2>고객불만 처리절차</h2>
+    <ul>
+      <li>
+        <p>① 접수↗</p>
+        <ul class="bullet">
+          <li>홈페이지</li>
+          <li>유선</li>
+        </ul>
+      </li>
+      <li>
+        <p>② 현장방문</p>
+      </li>
+      <li>
+        <p>③ 원인분석</p>
+      </li>
+      <li>
+        <p>④ 대책수립</p>
+      </li>
+      <li>
+        <p>⑤ 고객보고</p>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
