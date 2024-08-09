@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .shinsegae{
+      width: 95%;
+      max-width: 970px;
+      margin: 0 auto;
+    }
+
+    .head{
+      width: 100%;
+      display: flex;
+      border: 1px solid #ccc;
+      height: 289px;
+    }
+
+    .head .wrap_img{
+      width: 50%;
+      background-image: url(https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg);
+      background-size: cover;
+    }
+
+    .head .headtext{
+      width: 50%;
+      padding: 25px 30px 35px;
+      position: relative;
+    }
+
+    .head .headtext p{
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .headtext .date{
+      display: flex;
+      position: absolute;
+      justify-content: space-between;
+      bottom: 10px;
+      left: 20px;
+      width: 460px;
+    }
+
+    .wrap{
+      margin-top: 20px;
+    }
+
+    .wrap ul{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .wrap ul li{
+      flex: 1 1 30%;
+      border: 1px solid #ccc;
+    }
+
+    .wrap ul li img{
+      width: 100%;
+    }
+
+    .wrap_text{
+      padding: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .wrap_text h3{
+      font-size: 15px;
+    }
+
+    .wrap_text p{
+      margin-top: 27px;
+    }
+
+    @media screen and (max-width:985px) {
+      .head{ 
+        flex-wrap: wrap;
+      }
+
+      .wrap_img{
+        width: 100%;
+      }
+
+      .wrap ul li{
+        flex: 1 1 35%;
+      }
+      
+      .headtext h3{
+        font-size: 14px;
+      }
+
+      .headtext p:nth-of-type(1),
+      .headtext p:nth-of-type(2){
+        font-size: 12px;
+      }
+
+      .wrap .wrap_text h3{
+        font-size: 14px;
+      }
+
+      .wrap .wrap_text p{
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width:608px){
+      .wrap ul li{
+        flex: 1 1 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shinsegae">
+    <div class="head">
+      <div class="wrap_img">
+        
+      </div>
+      <div class="headtext">
+        <h3>신세계푸드, 역대급 무더위에 삼계탕 간편식 인기 “앗 뜨거”</h3>
+        <p>
+          역대급 무더위와 고물가 현상에 합리적인 가격으로 간편하게 보양 간편식 즐기는 ‘집보신’ 수요 늘어 
+          호텔컬렉션, 올반 등 삼계탕 간편식 7월 판매량 270% 급증…5~7월 판매량 50만개 돌파, 역대 최고 수준  
+          전문점 수준의 맛과 품질 메뉴 외식물가 대비 3분의 2 수준의 가격으로 즐길 수 있어 각광
+          무더위 길어질 것으로 예상…8월말까지 삼계탕 간편식 판매 강화 나서
+        </p>
+        <div class="date">
+          <p>2024.08.07</p>
+          <p>보도자료</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <ul>
+        <li>
+          <img src="https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg" alt="">
+          <div class="wrap_text">
+            <h3>신세계푸드, 역대급 무더위에 삼계탕 간편식 인기 “앗 뜨거”</h3>
+            <p>2024.08.07</p>
+            <p>보도자료</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg" alt="">
+          <div class="wrap_text">
+            <h3>신세계푸드 ‘데블스도어’, 에반 윌리엄스 협업 ‘하이볼 해피아워’ 실시</h3>
+            <p>2024.08.05</p>
+            <p>보도자료</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg" alt="">
+          <div class="wrap_text">
+            <h3>신세계푸드, 와인앤모어 협업…와인 애호가 위한 ‘치즈 케이크 플래터’ 출시</h3>
+            <p>2024.07.31</p>
+            <p>보도자료</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg" alt="">
+          <div class="wrap_text">
+            <h3>신세계푸드 ‘유아왓유잇’, ‘르 꼬르동 블루’와 손잡고 프렌치 대안식 출시</h3>
+            <p>2024.07.29</p>
+            <p>보도자료</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg" alt="">
+          <div class="wrap_text">
+            <h3>신세계푸드, 식품제조시설 폐기물 매립 제로화 앞장…ESG 경영 적극 실천</h3>
+            <p>2024.07.29</p>
+            <p>보도자료</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg" alt="">
+          <div class="wrap_text">
+            <h3>신세계푸드, 버니콘비니 협업 ‘브랜드 콜라’ 스포츠 에디션 출시</h3>
+            <p>2024.07.25</p>
+            <p>보도자료</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg" alt="">
+          <div class="wrap_text">
+            <h3>신세계푸드, 가루쌀 활용 100% 식물성 음료 ‘유아왓유잇 라이스 베이스드’ 출시</h3>
+            <p>2024.07.24</p>
+            <p>보도자료</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg" alt="">
+          <div class="wrap_text">
+            <h3>신세계푸드, 무더위에 얼려먹는 ‘쿨(Cool)잼’ 먹거리 인기</h3>
+            <p>2024.07.17</p>
+            <p>보도자료</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://www.shinsegaefood.com/uimages/2024/08/07/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C-1.jpg" alt="">
+          <div class="wrap_text">
+            <h3>“Let’s Kimchi!”…신세계푸드 ‘노브랜드 버거’, 김치 버거 2종 출시</h3>
+            <p>2024.07.11</p>
+            <p>보도자료</p>
+          </div>
+        </li>
+      </ul>
+    </div>  
+  </div>
+</body>
+</html>

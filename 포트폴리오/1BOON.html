@@ -21,49 +21,145 @@
     color: #333;
   }
 
+  body{
+    position: relative;
+  }
+
+  video{
+    overflow: hidden;
+    position: fixed;
+  }
+
   header{
-    padding: 30px;
     height: 10%;
     width: 100%;
-    max-width: 1600px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    position: absolute;
   }
 
   .head{
-    float: left;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
   }
 
   .list{
     /* float: left; */
     line-height: 20px;
+    position: relative;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
   }
 
-  .list ul{
+  .list > ul{
+    margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
-    line-height: 45px;
-    margin-left: 50px;
+    line-height: 80px;
+  }
+
+  .list > ul > li{
+    text-align: center;
+    width: 96px;
+    height: 320px;
+    padding: 0 30px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .list > ul > li a{
+    color: #fff;
+  }
+
+  .list > ul > li:first-child:hover,
+  .list > ul > li:nth-child(2):hover,
+  .list > ul > li:nth-child(3):hover,
+  .list > ul > li:nth-child(4):hover,
+  .list > ul > li:nth-child(5):hover,
+  .list > ul > li:nth-child(6):hover,
+  .list > ul > li:nth-child(7):hover{
+    background-color: #fba51c;
+  }
+
+  .list > ul:hover a{
+    color: #333;
   }
 
   .login{
-    background: orange;
-    border-radius: 20px;
-    margin-left: 50px;
+    position: absolute;
+    top: 17%;
+    right:100px;
+    transform: translateY(-100%);
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    background: #fba51c;
+    border-radius: 14px;
+    z-index: 1;
   }
 
-  .login ul{
+  .login > ul{
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .login ul li{
-    color: #fff;
-    font-size: 14px;
+  .login > ul li{
+    font-size: 15px;
     font-weight: bold;
+  }
+
+  .login ul li a{
+    color: #fff;
+  }
+
+  .login ul li::after{
+    content: "\00a0\00a0\00a0|";
+    color: #fff;
+  }
+
+  .login ul li:last-child:after{
+    display: none;
+  }
+
+  .login ul li:hover a{
+    text-decoration: underline;
+  }
+
+  ul.sub{
+    white-space: nowrap;
+    line-height: 40px;
+    display: none;
+    transition: 0.5s;
+  }
+
+  .list ul:hover ul.sub{
+    display: block;
+  }
+
+  ul.sub > li a{
+    text-align: center;
+    color: #333;
+  }
+
+  ul.sub > li:hover a{
+    text-decoration: underline;
+  }
+
+  .bg{
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0px;
+    transition: 0.4s;
+  }
+
+  .list ul li:hover ~ .bg{
+    height: 320px;
   }
 
   /* .login ul li:first-child img{
@@ -73,45 +169,93 @@
   } */
 </style>
 <body>
+  <video autoplay muted loop>
+    <source src="images/coffee.mp4" type="video/mp4">
+  </video>
   <header>
-    <div class="head">
-      <img src="images/1BOON.png" alt="">
-    </div>
     <div class="list">
+      <div class="head">
+        <img src="images/1BOON.png" alt="">
+      </div>
       <ul>
         <li>
-          카페1분
+          <a href="">카페1분</a>
+          <ul class="sub">
+            <li><a href="">브랜드소개</a></li>
+            <li><a href="">오시는길</a></li>
+          </ul>
         </li>
         <li>
-          상품안내
+          <a href="">상품안내</a>
+          <ul class="sub">
+            <li><a href="">커피이야기</a></li>
+            <li><a href="">신메뉴</a></li>
+            <li><a href="">전체메뉴</a></li>
+          </ul>
         </li>
         <li>
-           무인카페
+           <a href="">무인카페</a>
+           <ul class="sub">
+            <li><a href="">무인카페현황</a></li>
+           </ul>
         </li>
         <li>
-          성공창업안내
+          <a href="">성공창업안내</a>
+          <ul class="sub">
+            <li><a href="">창업절차</a></li>
+            <li><a href="">무인카페머신</a></li>
+            <li><a href="">창업비용</a></li>
+            <li><a href="">창업강의</a></li>
+            <li><a href="">창업상담신청</a></li>
+           </ul>
         </li>
         <li>
-          매장찾기
+          <a href="">매장찾기</a>
+          <ul class="sub">
+            <li><a href="">매장찾기</a></li>
+           </ul>
         </li>
         <li>
-          커뮤니티
+          <a href="">커뮤니티</a>
+          <ul class="sub">
+            <li><a href="">공지사항</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">1:1문의</a></li>
+           </ul>
         </li>
         <li>
-          제품구매
+          <a href="">제품구매</a>
+          <ul class="sub">
+            <li><a href="">원두</a></li>
+            <li><a href="">텀블러</a></li>
+            <li><a href="">머그컵</a></li>
+           </ul>
         </li>
+        <div class="bg">
+        
+        </div>
       </ul>
+      <div class="login">
+        <ul>
+          <li>
+            <a href="">로그인</a>
+          </li>
+          <li>
+            <a href="">회원가입</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="login">
+    <!-- <div class="login">
       <ul>
         <li>
-          로그인
+          <a href="">로그인</a>
         </li>
         <li>
-          회원가입
+          <a href="">회원가입</a>
         </li>
       </ul>
-    </div>
+    </div> -->
   </header>
 </body>
 </html>
