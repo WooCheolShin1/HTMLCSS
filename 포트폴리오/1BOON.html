@@ -57,21 +57,24 @@
   .list > ul{
     margin-left: 50px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     line-height: 80px;
   }
 
   .list > ul > li{
     text-align: center;
-    width: 96px;
-    height: 320px;
-    padding: 0 30px;
+    height: 20px;
     z-index: 1;
     position: relative;
+    width: 1;
   }
 
-  .list > ul > li a{
+  .list > ul > li > a{
     color: #fff;
+    display: block;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
   }
 
   .list > ul > li:first-child:hover,
@@ -82,6 +85,7 @@
   .list > ul > li:nth-child(6):hover,
   .list > ul > li:nth-child(7):hover{
     background-color: #fba51c;
+    height: 320px;
   }
 
   .list > ul:hover a{
@@ -90,8 +94,8 @@
 
   .login{
     position: absolute;
-    top: 17%;
-    right:100px;
+    top: 50px;
+    right: 100px;
     transform: translateY(-100%);
     margin-top: 10px;
     padding: 10px 15px 10px 15px;
@@ -133,6 +137,10 @@
     line-height: 40px;
     display: none;
     transition: 0.5s;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
   }
 
   .list ul:hover ul.sub{
@@ -146,6 +154,10 @@
 
   ul.sub > li:hover a{
     text-decoration: underline;
+  }
+
+  li:hover a{
+    width: 100%;
   }
 
   .bg{

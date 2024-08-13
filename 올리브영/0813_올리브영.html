@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    a{
+      color: #333;
+      text-decoration: none;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    .main{
+      display: flex;
+      width: 95%;
+      max-width: 1420px;
+      margin: 0 auto;
+    }
+
+    .left{
+      width: 40%;
+      height: 100%;
+      top: 140px;
+      position: sticky;
+    }
+
+    .left .txt p:first-child{
+      font-size: 54px;
+      font-weight: bold;
+    }
+
+    .left .txt > ul{
+      margin-top: 60px;
+    }
+
+    .left .txt > ul > li{
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .left .txt > ul > li:first-child{
+      color: #82dc28;
+    }
+
+    .right{
+      width: 60%;
+    }
+
+    .right .maintain{
+      margin-top: 140px;
+    }
+
+    .right .maintain > ul{
+      display: flex;
+    }
+
+    .right .maintain > ul .spanflex span:first-child{
+      margin-right: 100px;
+    }
+
+    .right .maintain > ul .spanflex span:nth-child(2){
+      display: none;
+    }
+
+    .right .maintain > ul li::before,
+    .right .maintain > ul > .spanflex::before{
+      width: 100%;
+      height: 100px;
+      content: "";
+      display: block;
+    }
+
+    .right .maintain > ul > li img{
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .right .maintain > ul > li > p:nth-of-type(1){
+      margin-top: 46px;
+      font-size: 2rem;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .right .maintain > ul > li > p:nth-of-type(2){
+      margin-top: 34px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #565e65;
+    }
+
+    .right .maintain > ul > li > p:nth-of-type(3){
+      color: #000;
+      margin-top: 31px;
+    }
+
+    .hidden{
+      display: none;
+    }
+
+    footer{
+      padding: 300px;
+    }
+
+    @media screen and (max-width: 1170px) {
+      .main{
+        flex-direction: column;
+      }
+
+      .left{
+        position: relative;
+        height: 68px;
+        top: 0;
+      }
+
+      .left .txt p:first-child{
+        font-size: 26px;
+      }
+
+      .left .txt > ul > li{
+        display: none;
+      }
+
+      .right{
+        width: 100%;
+      }
+
+      .right .maintain{
+        margin-top: 68px;
+      }
+
+      .right .maintain > ul{
+        flex-direction: column;
+      }
+
+      .right .maintain > ul > li > p:nth-of-type(1){
+        font-size: 18px;
+        margin-top: 30px;
+      }
+
+      .right .maintain > ul > li > p:nth-of-type(2),
+      .right .maintain > ul > li > p:nth-of-type(3){
+        font-size: 13px;
+      }
+
+      .right .maintain > ul .spanflex{
+        display: flex;
+        font-size: 12px;
+      }
+
+      .right .maintain > ul .spanflex span:first-child{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        color: #82dc28;
+        font-weight: bold;
+      }
+
+      .right .maintain > ul .spanflex span:nth-child(2){
+        display: block;
+      }
+
+      .hidden{
+        display: block;
+      }
+
+      .hidden2{
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+      <div class="txt">
+        <p>
+          OLIVE YOUNG<br>
+          Platforms
+        </p> 
+        <ul>
+          <li><a href="#con1">올리브영 매장</a></li>
+          <li><a href="#con2">올리브영 Online (국내)</a></li>
+          <li><a href="#con3">올리브영 글로벌</a></li>
+          <li><a href="#con4">디플롯</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <div class="maintain">
+        <ul>
+          <div class="spanflex">
+            <span>01</span>
+            <span>올리브영 매장</span>
+          </div>
+          <li id="con1">
+            <img src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform1-cf428ca64855adc4a1062251b83cf683.jpg;jsessionid=E9D5E28CDFF19CD8849BBFE152AC7349" alt="">
+            <p>고객과 가장 가까운 곳에서<br>
+              건강한 아름다움을 제안합니다.</p>
+            <p>
+              우리는 1,300여개의 매장을 기반으로 고객에게<br class="hidden"> 뷰티&헬스 상품을 큐레이션합니다.<br>
+              또한 체험형 콘텐츠와 커머스의 연계를 통해 <br class="hidden">파트너사들에게<br class="hidden2">
+              매력적인 브랜딩, 마케팅 채널로<br class="hidden"> 진화하고 있습니다.
+            </p>
+            <p><a href="#">올리브영 매장이 보고 싶다면?</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="maintain">
+        <ul>
+          <div class="spanflex">
+            <span>02</span>
+            <span>올리브영 Online (국내)</span>
+          </div>
+          <li id="con2">
+            <img src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform2-777eecd5b0d28e7c17848bfe3dffe645.jpg;jsessionid=E9D5E28CDFF19CD8849BBFE152AC7349" alt="">
+            <p>고객이 건강한 아름다움을 찾아가는<br>
+              온라인 PLAYGROUND를 제공합니다.</p>
+            <p>
+              우리는 차별화된 온라인 콘텐츠와 AI기술 기반<br class="hidden"> 상품 추천을 통해 월 이용자 수 480만명,<br class="hidden2">
+              멤버십 회원 수 1,400만명 이상의 뷰티&헬스 커뮤니티를<br class="hidden"> 구현했습니다.<br>
+              또한 업계 최초 당일 배송 서비스인 오늘드림을 <br class="hidden">실행하여 고객경험을 혁신했습니다.
+            </p>
+            <p><a href="#">올리브영 Online 서비스가 궁금하다면?</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="maintain">
+        <ul>
+          <div class="spanflex">
+            <span>03</span>
+            <span>올리브영 글로벌</span>
+          </div>
+          <li id="con3">
+            <img src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform3-c78371c66bba75b227096ecd0f128e12.jpg;jsessionid=E9D5E28CDFF19CD8849BBFE152AC7349" alt="">
+            <p>전세계에 한국의<br>
+              뷰티&헬스를 알립니다.</p>
+            <p>
+              우리는 한국의 뷰티&헬스 브랜드들이 세계로 뻗어<br class="hidden"> 나가는 교두보 역할을 수행합니다.<br>
+              2019년 런칭한 글로벌몰과 연간 약 300만명 이상이<br class="hidden"> 외국인 고객이 방문하는 국내 글로벌 특화매장은<br class="hidden">
+              파트너사와 함께 글로벌 시장에서 동반 성장을<br class="hidden"> 할 수 있는 핵심 원동력입니다.
+            </p>
+            <p><a href="#">올리브영의 글로벌 플랫폼을 보고싶다면?</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="maintain">
+        <ul>
+          <div class="spanflex">
+            <span>04</span>
+            <span>디플롯</span>
+          </div>
+          <li id="con4">
+            <img src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform4-7c45898de0bdfb1de922247a126d8886.jpg;jsessionid=E9D5E28CDFF19CD8849BBFE152AC7349" alt="">
+            <p>가치지향 라이프스타일 플랫폼을 통해<br>
+              고객에게 다양한 즐거움을 선물합니다.</p>
+            <p>
+              고객이 뷰티&헬스를 넘어 라이프스타일 전반에서<br class="hidden"> 자신만의 가치와<br class="hidden2"> 취향을 반영한 브랜드를 탐색할 수 있습니다.<br>
+              이러한 고객 경험의 확장을 통해 우리는 뷰티&헬스를<br class="hidden"> 넘어선<br class="hidden2"> 종합 라이프 스타일 플랫폼으로 도약합니다.
+            </p>
+            <p><a href="#">D.PLOT의 감각적인 제품들이 궁금하다면?</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+</body>
+</html>
