@@ -22,13 +22,13 @@
   }
 
   body{
-    position: relative;
+    background-image: url(https://cafeilboon.com/theme/default/images/main/main_sec01_bg.jpg);
   }
 
-  video{
+  /* video{
     overflow: hidden;
     position: fixed;
-  }
+  } */
 
   header{
     height: 10%;
@@ -36,13 +36,17 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    position: absolute;
+    position: sticky;
+    top: 0;
   }
 
   .head{
-    position: relative;
     z-index: 1;
-    padding: 20px;
+    padding: 0 20px;
+  }
+
+  .head img{
+    padding: 35px;
   }
 
   .list{
@@ -55,10 +59,11 @@
   }
 
   .list > ul{
-    margin-left: 50px;
+    margin-left: 20px;
     display: flex;
     /* flex-wrap: wrap; */
-    line-height: 80px;
+    /* line-height: 120px; */
+    font-weight: 700;
   }
 
   .list > ul > li{
@@ -66,35 +71,88 @@
     height: 20px;
     z-index: 1;
     position: relative;
-    width: 1;
+    height: 80px;
+    padding-top: 50px;
+    width: 140px;
   }
 
   .list > ul > li > a{
-    color: #fff;
+    color: #000;
     display: block;
     width: 100%;
-    padding: 0 30px;
     box-sizing: border-box;
+    position: relative;
+    letter-spacing: -2px;
   }
 
-  .list > ul > li:first-child:hover,
-  .list > ul > li:nth-child(2):hover,
-  .list > ul > li:nth-child(3):hover,
-  .list > ul > li:nth-child(4):hover,
-  .list > ul > li:nth-child(5):hover,
-  .list > ul > li:nth-child(6):hover,
-  .list > ul > li:nth-child(7):hover{
-    background-color: #fba51c;
-    height: 320px;
+  .list > ul > li > a::after{
+    display: block;
+    content: '';
+    width: 90px;
+    height: 1px;
+    position: absolute;
+    bottom: -10px;
+    left: 20%;
+    background: #333333;
+    transform: scaleX(0);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .list > ul > li:hover > a::after{
+    display: block;
+    content: '';
+    width: 90px;
+    height: 1px;
+    position: absolute;
+    bottom: -10px;
+    left: 20%;
+    background: #333333;
+    transform: scaleX(1);
+    transition: all 0.25s ease-in-out;
   }
 
   .list > ul:hover a{
     color: #333;
   }
 
+  ul.sub{
+    white-space: nowrap;
+    line-height: 30px;
+    padding: 25px 0;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    height: 190px;
+    width: 100%;
+  }
+
+  .list ul > li:hover{
+    background-color: #fba51c;
+  }
+
+  .list ul:hover ul.sub{
+    display: block;
+  }
+
+  .list ul > li:hover ul.sub{
+    display: block;
+    background-color: #fba51c;
+  }
+
+  ul.sub > li a{
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+  }
+
+  ul.sub > li:hover a{
+    text-decoration: underline;
+  }
+
   .login{
     position: absolute;
-    top: 50px;
+    top: 70px;
     right: 100px;
     transform: translateY(-100%);
     margin-top: 10px;
@@ -132,41 +190,13 @@
     text-decoration: underline;
   }
 
-  ul.sub{
-    white-space: nowrap;
-    line-height: 40px;
-    display: none;
-    transition: 0.5s;
-    position: absolute;
-    left: 0;
-    top: 80px;
-    width: 100%;
-  }
-
-  .list ul:hover ul.sub{
-    display: block;
-  }
-
-  ul.sub > li a{
-    text-align: center;
-    color: #333;
-  }
-
-  ul.sub > li:hover a{
-    text-decoration: underline;
-  }
-
-  li:hover a{
-    width: 100%;
-  }
-
   .bg{
     position: absolute;
     background-color: #fff;
     left: 0;
-    top: 0;
+    top: 0px;
     width: 100%;
-    height: 0px;
+    height: 0;
     transition: 0.4s;
   }
 
@@ -174,24 +204,102 @@
     height: 320px;
   }
 
-  /* .login ul li:first-child img{
-    margin-top: 13px;
-    width: 20px;
-    height: 25px;
-  } */
+  .title h1{
+    text-align: center;
+    font-size: 50px;
+    color: #f28300;
+  }
+
+  .wrap{
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .wrap .button{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 40px 0 50px;
+  }
+
+  .wrap .button li{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .wrap .wrapimage {
+    display: flex;
+  }
+
+  .wrap .wrapimage ul{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .wrap .wrapimage ul li {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .wrap .wrapimage ul li p:nth-of-type(1){
+    font-size: 16px;
+    line-height: 24px;
+    color: #fba51c;
+    letter-spacing: 0.5px;
+  }
+
+  .wrap .wrapimage ul li p:nth-of-type(2){
+    font-size: 19px;
+    line-height: 30px;
+    color: #333333;
+    letter-spacing: -1px;
+  }
+
+  .arrowleft{
+    background: url(images/arrowleft.png);
+    width: 70px;
+    height: 70px;
+    transform: translateY(-50%);
+    top: 55%;
+    left: 100px;
+    position: absolute;
+    border: 0;
+  }
+
+  .arrowright{
+    background: url(images/arrowright.png);
+    width: 70px;
+    height: 70px;
+    transform: translateY(-50%);
+    top: 55%;
+    right: 100px;
+    position: absolute;
+    border: 0;
+  }
+
+  .wrap2{
+    background: url(images/main2.jpg) no-repeat center / cover;
+    width: 100%;
+  }
+
+  .wrap2 .inner{
+    padding: 180px 0 190px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 </style>
 <body>
-  <video autoplay muted loop>
-    <source src="images/coffee.mp4" type="video/mp4">
-  </video>
   <header>
     <div class="list">
       <div class="head">
-        <img src="images/1BOON.png" alt="">
+        <a href="#">
+          <img src="images/logo.png" alt="">
+        </a>
       </div>
       <ul>
         <li>
-          <a href="">카페1분</a>
+          <a href="">카페일분</a>
           <ul class="sub">
             <li><a href="">브랜드소개</a></li>
             <li><a href="">오시는길</a></li>
@@ -206,9 +314,9 @@
           </ul>
         </li>
         <li>
-           <a href="">무인카페</a>
+           <a href="">무인카페 시장의 비젼</a>
            <ul class="sub">
-            <li><a href="">무인카페현황</a></li>
+            <li><a href="">무인카페 시장의 비젼</a></li>
            </ul>
         </li>
         <li>
@@ -258,16 +366,55 @@
         </ul>
       </div>
     </div>
-    <!-- <div class="login">
+  </header>
+  <div class="title">
+    <h1>CAFEILBOON MENU</h1>
+  </div>
+  <div class="wrap">
+    <ul class="button">
+      <li><a href="">COFFEE</a></li>
+      <li><a href="">LATTE</a></li>
+      <li><a href="">KOMBU</a></li>
+      <li><a href="">YOGURT</a></li>
+      <li><a href="">BLACK TEA</a></li>
+      <li><a href="">GREEN TEA</a></li>
+      <li><a href="">FRUIT TEA</a></li>
+      <li><a href="">FRUITY COFFEE</a></li>
+      <li><a href="">ETC</a></li>
+    </ul>  
+    <div class="wrapimage">
+      <button class="arrowleft">
+      </button>
       <ul>
         <li>
-          <a href="">로그인</a>
+          <img src="images/coffee1.png" alt="">
+          <p>COFFEE</p>
+          <p>아이스 아인슈페너</p>
         </li>
         <li>
-          <a href="">회원가입</a>
+          <img src="images/coffee2.png" alt="">
+          <p>COFFEE</p>
+          <p>에스프레소</p>
+        </li>
+        <li>  
+          <img src="images/coffee3.png" alt="">
+          <p>COFFEE</p>
+          <p>에스프레소 더블샷</p>
+        </li>
+        <li>  
+          <img src="images/coffee4.png" alt="">
+          <p>COFFEE</p>
+          <p>아메리카노</p>
         </li>
       </ul>
-    </div> -->
-  </header>
+      <button class="arrowright">
+      </button>
+    </div>
+  </div>
+  <div class="wrap2">
+    <div class="inner">
+      <h1>CAFEILBOON MENU</h1>
+    </div>
+  </div>
 </body>
 </html>

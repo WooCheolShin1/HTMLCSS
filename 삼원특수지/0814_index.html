@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+
+    .main{
+      width: 90%;
+      max-width: 1800px;
+      display: flex;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+
+    .main .left{
+      width: 50%;
+      position: sticky;
+      height: 100%;
+      top: 100px;
+    }
+
+    .main .left .txt > p:first-child{
+      font-size: 22px;
+      color: #00000080;
+      font-weight: bold;
+    }
+
+    .main .left .txt > p:nth-child(2){
+      font-size: 96px;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+
+    .main .left .item a{
+      border: 2px solid #000;
+      padding: 0 32px;
+      margin-top: 32px;
+      height: 56px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 28px;
+      align-items: center;
+      display: inline-flex;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+
+    .main .left .item a > p:nth-child(2){
+      margin-left: 10px;
+    }
+
+    .arrow{
+      width: 24px;
+      height: 24px;
+      background-image: url(https://www.samwonpaper.com/resources/_asset/pc/common/images/icon/icon-more-long-arrow-black.png);
+    }
+
+    .main .left .image{
+      margin-top: 120px;
+      position: relative;
+    }
+
+    .main .left .image img{
+      width: 70%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .main .left .image .img_headline{
+      color: #3f3f46;
+      line-height: 1.4;
+      position: absolute;
+      padding: 72px 56px;
+      font-weight: bold;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .main .left .image .img_headline p:nth-child(1){
+      font-size: 38px;
+    }
+
+    .main .left .image .img_headline p:nth-child(2){
+      font-size: 16px;
+      margin-top: 16px;
+    }
+
+    .right{
+      width: 50%;
+      display: flex;
+      height: 100%;
+      padding: 50vh 0 330px 0;
+    }
+
+    .right ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .right ul:first-child{
+      margin-top: 500px;
+    }
+
+    .right ul:nth-child(2){
+      margin-top: 200px;
+    }
+
+    .right ul li{
+      width: 100%;
+      padding: 20px;
+    }
+
+    .right ul li img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+      <div class="txt">
+        <p>
+          Samwon Gray Paper : 다채로운 매력의 그레이 페이퍼
+        </p>
+        <p>
+          Monthly Paper
+        </p>
+        <div class="item">
+          <a href="#">
+            <p>제품보기</p>
+            <p class="arrow">
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="image">
+        <div class="img_headline">
+          <p>
+            다채로운 매력의 소유자<br>
+            그레이 페이퍼를 소개합니다.
+          </p>
+          <p>
+            July 2024
+          </p>
+        </div>
+        <img src="https://www.samwonpaper.com/storage/cms/PRODUCTMONTH/202407/d524e42f-a2bd-4a8b-a1ec-3ec4b6da1058.jpg" alt="">
+      </div>
+    </div>
+    <div class="right">
+      <ul>
+        <li>
+          <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/SIR-99_MA.png" alt="">
+        </li>
+        <li>
+          <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/MTRC-99_MA.png" alt="">
+        </li>
+        <li>
+          <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/SKIN-99_MA.png" alt="">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/MOON-99_MA.png" alt="">
+        </li> 
+        <li>
+          <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/RMK-99_MA.png" alt="">
+        </li>
+        <li>
+          <img src="https://www.samwonpaper.com/storage/cms/PACKAGEBOOK/task/CMT-99_MA.png" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
