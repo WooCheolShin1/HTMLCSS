@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    var userName = "그린";
+    var userId = "컴퓨터";
+    var userId = "computer";
+    userId = "12345";
+    var pw;
+    pw = 456789;
+    document.write(userName + userId + pw);
+
+    let name = "그린";
+    let name1, name2, name3;
+    name1 = "green";
+    name2 = "red";
+    name3 = "blue";
+    {let name1 = "computer";}
+    //var은 중복이 가능한데 기존 데이터는 날라가고 let은 중복으로 변수 선언이 안된다함 ㅇㅇ 또한 사용 전에 먼저 선언부터 해야함 ㅇㅇ 할당은 ㄱㄴ
+
+    const number = 123;
+    const a01 = true;
+    const a02 = null;
+    const a03 = 100;
+    document.write(a01 + a02);
+    //삼항연산 조건 ? 참인값 : 거짓인값
+    document.write((a01 ? "참" : "거짓") + "<br>");
+    document.write(a03 >=100 ? "100보다 큰수":"100보다 작은 수");
+    //const는 선언만 하면 안된다고 한다 ㅇㅇ 재선언 또한 안된다
+  </script>
+</body>
+</html>

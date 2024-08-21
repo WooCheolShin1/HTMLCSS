@@ -213,6 +213,7 @@
   .wrap{
     max-width: 1300px;
     margin: 0 auto;
+    padding: 10px 0 110px;
   }
 
   .wrap .button{
@@ -280,13 +281,124 @@
 
   .wrap2{
     background: url(images/main2.jpg) no-repeat center / cover;
-    width: 100%;
+    padding: 180px 0 190px;
+    text-align: center;
   }
 
   .wrap2 .inner{
     padding: 180px 0 190px;
     max-width: 1300px;
     margin: 0 auto;
+  }
+
+  .wrap2 > .inner > h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+  }
+
+  .wrap2 > .inner > p{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    color: #fff;
+  }
+
+  .wrap3{
+    background: url(images/main3.jpg) no-repeat center / cover;
+    padding: 130px 0 100px;
+  }
+
+  .wrap3 > .inner{
+    text-align: center;
+  }
+
+  .wrap3 > .inner > h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #f28300;
+  } 
+
+  .wrap3 > .inner > p:nth-of-type(1){
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+  }
+
+  .wrap3 > .inner > img{
+    margin-top: 55px;
+    padding-left: 45px;
+  }
+
+  #footer{
+    background: #222222;
+  }
+
+  #footer > .inner{
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 80px 0 85px;
+  }
+
+  #footer > .inner .footerwrap .footerwrap2 ul{
+    display: flex;
+    top: 10px;
+    right: 0;
+    position: absolute;
+  }
+
+  #footer > .inner .footerwrap .footerwrap2 ul li::before{
+    content: "\00a0\00a0|\00a0\00a0";
+    color: #fff;
+  }
+
+  #footer > .inner .footerwrap .footerwrap2 ul li:first-child::before{
+    display: none;
+  }
+
+  #footer > .inner .footerwrap .footerwrap2 ul li{
+    font-size: 14px;
+  }
+
+  #footer > .inner .footerwrap .footerwrap2 ul li a{
+    color: #fff;
+  }
+
+  #footer > .inner .footerwrap .footertext,
+  #footer > .inner .footerwrap .footertext2{
+    display: flex;
+  }
+
+  #footer > .inner .footerwrap .footertext p,
+  #footer > .inner .footerwrap .footertext2 p{
+    color: #fff;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  #footer > .inner .footerwrap .footertext2 p{
+    margin-top: 0;
+  }
+
+  #footer > .inner .footerwrap .footertext hr,
+  #footer > .inner .footerwrap .footertext2 hr{
+    width: 20px;
+    border: none;
+    display: inline-block;
+  }
+
+  #footer > .inner .footerwrap .footertext3 {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #fff;
   }
 </style>
 <body>
@@ -414,7 +526,40 @@
   <div class="wrap2">
     <div class="inner">
       <h1>CAFEILBOON MENU</h1>
+      <p>무인 시장의 인기 상승, 블루오션 무인카페! CAFEILBOON</p>
     </div>
   </div>
+  <div class="wrap3">
+    <div class="inner">
+      <h1>CAFEILBOON MENU</h1>
+      <p>무인 시장의 인기 상승, 블루오션 무인카페! CAFEILBOON</p>
+      <img src="https://cafeilboon.com/theme/default/images/main/main_sec03_img.png" alt="">
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="inner">
+      <div class="footerwrap">
+        <div class="footerwrap2">
+          <ul>
+            <li><a href="#">카페일분</a></li>
+            <li><a href="#">매장찾기</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+          </ul>
+        </div>
+        <img src="images/ft_logo.png" alt="">
+        <div class="footertext">
+          <p>카페일분</p><hr><p>주식회사 민성</p><hr><p>대표자 : 양성환</p><hr><p>주소 : 경기도 광명시 소하로190, B-1013</p><hr><p>대표번호 : 02-899-1054</p><hr><p>팩스 : 02-899-1053</p>
+        </div>
+        <div class="footertext2">
+          <p>사업자등록번호 : 621-87-01317</p><hr>
+          <p>통신판매업신고번호 : 2023-경기광명-0785</p>
+        </div>
+        <div class="footertext3">
+          <p>COPYRIGHT(C) 카페일분. CO.LTD ALL RIGHT RESERVED.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

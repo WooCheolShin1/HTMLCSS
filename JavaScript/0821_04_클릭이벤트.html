@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+
+    #clickevent{
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+
+    #clickevent ul{
+      display: flex;
+    }
+
+    #clickevent ul li{
+      width: 200px;
+      height: 54px;
+      background: rgba(51, 51, 51, 0.8);
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 700;
+      border: 1px solid #fff;
+      border-radius: 27px;
+      margin: 0 10px;
+      line-height: 54px;
+      text-align: center;
+    }
+
+    #clickevent ul li > a.on{
+      background: red;
+      color: #fff;
+    }
+
+    #clickevent ul li > a.off{
+      background: rgba(51, 51, 51, 0.8);
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    #clickevent ul li a{
+      width: 100%;
+      display: block;
+      border-radius: 27px;
+    }
+
+    #clickevent2{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="clickevent">
+    <ul>
+      <li><a href="#">연구개발</a></li>
+      <li><a href="#">기초연구</a></li>
+      <li><a href="#">패키지연구</a></li>
+      <li><a href="#">기술연구</a></li>
+      <li><a href="#">안전관리</a></li>
+      <li><a href="#">연구전략</a></li>
+    </ul>
+  </div>
+  <div id="clickevent2">
+    <p>연구개발</p>
+  </div>
+  <script>
+    var btn = document.querySelector("div#clickevent ul li:first-child a");
+    var btn2 = document.querySelector("div#clickevent ul li:nth-child(2) a");
+    var btn3 = document.querySelector("div#clickevent ul li:nth-child(3) a");
+    var btn4 = document.querySelector("div#clickevent ul li:nth-child(4) a");
+    var btn5 = document.querySelector("div#clickevent ul li:nth-child(5) a");
+    var btn6 = document.querySelector("div#clickevent ul li:nth-child(6) a");
+
+    btn.onclick = function(e){
+      e.preventDefault();
+      this.classList.toggle("on");
+    }
+
+    btn2.onclick = function(e){
+      e.preventDefault();
+      this.classList.toggle("on");
+    }
+
+    btn3.onclick = function(e){
+      e.preventDefault();
+      this.classList.toggle("on");
+    }
+
+    btn4.onclick = function(e){
+      e.preventDefault();
+      this.classList.toggle("on");
+    }
+
+    btn5.onclick = function(e){
+      e.preventDefault();
+      this.classList.toggle("on");
+    }
+
+    btn6.onclick = function(e){
+      e.preventDefault();
+      this.classList.toggle("on");
+    }
+  </script>
+</body>
+</html>
