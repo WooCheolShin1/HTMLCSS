@@ -152,18 +152,18 @@
 
   .login{
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 100px;
     transform: translateY(-100%);
     margin-top: 10px;
-    padding: 10px 15px 10px 15px;
+    padding: 0px 15px 0px 15px;
     background: #fba51c;
     border-radius: 14px;
     z-index: 1;
   }
 
   .login > ul{
-    gap: 20px;
+    gap: 10px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -177,9 +177,18 @@
     color: #fff;
   }
 
+  .login ul li a img{
+    width: 15px;
+    height: 15px;
+  }
+
   .login ul li::after{
-    content: "\00a0\00a0\00a0|";
+    content: "\00a0|";
     color: #fff;
+  }
+
+  .login ul li:first-child:after{
+    display: none;
   }
 
   .login ul li:last-child:after{
@@ -225,7 +234,7 @@
 
   .wrap .button li{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   .wrap .wrapimage {
@@ -469,9 +478,9 @@
       </ul>
       <div class="login">
         <ul>
-          <li>
-            <a href="">로그인</a>
-          </li>
+          <li><a href="#"><img src="images/lock.png" alt="">
+            </a></li>
+          <li><a href="#">로그인</a></li>
           <li>
             <a href="">회원가입</a>
           </li>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    document.write('<h1 class="title">제목태그</h1>');
+    // alert("경고창입니다.");
+    // let test = window.confirm("자바스크립트가 재미있습니까?");
+    // document.write(test ? "ㅇㅋ" : "나도 재미없음");
+    let gender = window.prompt("당신의 성별은?");
+    document.write("당신이 입력한 성별은 " + gender + " 입니다.<br>");
+    let kor = Number(prompt("국어 점수 입력"));
+    let math = Number(prompt("수학 점수 입력"));
+    let eng = Number(prompt("영어 점수 입력"));
+    let sum = kor + math + eng;
+    document.write("당신이 획득한 총점은 " + sum + " 점 입니다.<br>");
+    // document.write(kor + math + eng);
+  </script>
+</body>
+</html>

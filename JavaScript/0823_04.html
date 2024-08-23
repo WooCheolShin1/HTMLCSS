@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .lush_value{
+    display: flex;
+    width: 100%;
+    height: 720px;
+    background-color: yellowgreen;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .lush_value2{
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 94px 177px;
+  }
+
+  .lush_value2 li{
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 0;
+  }
+
+  .lush_value2 li:first-child{
+    background: url(images/ico_main_value01.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .lush_value2 li:nth-child(2){
+    background: url(images/ico_main_value02.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .lush_value2 li:nth-child(3){
+    background: url(images/ico_main_value03.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .lush_value2 li:nth-child(4){
+    background: url(images/ico_main_value04.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .lush_value2 li:nth-child(5){
+    background: url(images/ico_main_value05.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .lush_value2 li:nth-child(6){
+    background: url(images/ico_main_value06.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(34, 34, 34);
+  }
+</style>
+<body>
+  <div class="lush_value">
+    <ul class="lush_value2">
+      <li>Naked Products</li>
+      <li>Fighting Animal Testing0</li>
+      <li>Fresh Cosmetics</li>
+      <li>100% Vegetarian</li>
+      <li>Ethical Buying</li>
+      <li>Handmade With Love</li>
+    </ul>
+  </div>
+</body>
+<script>
+  document.querySelector('.lush_value2 li:first-child').addEventListener('mouseover', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="url(images/main_value01.jpg)";
+  })
+
+  document.querySelector('.lush_value2 li:first-child').addEventListener('mouseout', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="none";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(2)').addEventListener('mouseover', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="url(images/main_value02.jpg)";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(2)').addEventListener('mouseout', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="none";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(3)').addEventListener('mouseover', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="url(images/main_value03.jpg)";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(3)').addEventListener('mouseout', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="none";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(4)').addEventListener('mouseover', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="url(images/main_value04.jpg)";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(4)').addEventListener('mouseout', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="none";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(5)').addEventListener('mouseover', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="url(images/main_value05.jpg)";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(5)').addEventListener('mouseout', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="none";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(6)').addEventListener('mouseover', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="url(images/main_value06.jpg)";
+  })
+
+  document.querySelector('.lush_value2 li:nth-child(6)').addEventListener('mouseout', () => {
+    document.querySelector(".lush_value").style.backgroundImage ="none";
+  })
+ 
+</script>
+</html>
