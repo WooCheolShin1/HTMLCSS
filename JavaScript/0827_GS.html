@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .bind{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1520px;
+      transition: 0.5s;
+    }
+
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+
+    .bind .first h1,
+    .bind .second h1 {
+      padding: 40px 120px 40px 20px;
+      font-size: 32px;
+      position: relative;
+    }
+
+    .bind .first h1 i::before,
+    .bind .second h1 i::before
+    {
+      width: 23px;
+      height: 3px;
+      margin: -1px 0 0 -11px;
+    }
+
+    .bind .first h1 i::after,
+    .bind .second h1 i::after{
+      width: 3px;
+      height: 23px;
+      margin: -11px 0 0 -1px;
+    }
+
+    .bind .first h1 i::before,
+    .bind .first h1 i::after,
+    .bind .second h1 i::before,
+    .bind .second h1 i::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 95%;
+      background: #000;
+      border-radius: 2px;
+    }
+
+    .bind .first p,
+    .bind .second p {
+      display: none;
+      transition: 0.5s;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="bind">
+    <div class="first">
+      <h1>GS파워
+        <i>
+          
+        </i>
+     </h1>
+      <p><img src="images/img_collective_a01.jpg" alt=""></p>
+    </div>
+    <div class="second">
+      <h1>인천종합에너지
+        <i>
+          
+        </i>
+      </h1>
+      <p><img src="images/img_collective_b01.jpg" alt=""></p>
+    </div>
+  </div>
+  <script>
+    let one = true;
+    let two = true;
+
+    document.querySelector(".bind .first h1").onclick = function(){
+      if(one){
+        document.querySelector(".bind .first p").style.display ="block";
+        document.querySelector(".bind .second p").style.display ="none";
+        document.querySelector(".bind .first h1 i::after").style.display ="none";
+        document.querySelector(".bind .second h1 i::after").style.display ="block";
+      }
+    }
+
+    document.querySelector(".bind .second h1").onclick = function(){
+      if(two){
+        document.querySelector(".bind .first p").style.display ="none";
+        document.querySelector(".bind .second p").style.display ="block";
+        document.querySelector(".bind .second h1 i::after").style.display ="none";
+        document.querySelector(".bind .first h1 i::after").style.display ="block";
+      }
+    }
+  </script>
+</body>
+</html>

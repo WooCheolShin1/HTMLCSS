@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+
+  .but{
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+  }
+
+  .but ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .but ul li a{
+    padding: 5px 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+
+  .title{
+    margin: 50px auto;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    background-size: cover;
+    opacity: 0;
+  }
+
+  .title img {
+    width: 300px;
+    height: 100px;
+  }
+
+  .title2 {
+    width: 1903px;
+    height: 500px;
+    opacity: 0;
+  }
+
+  /*
+    스크립트 css
+  */
+
+  .but ul li a.on{
+    background-color: #211955;
+    color: #fff;
+  }
+
+  .title.on{
+    opacity: 1;
+  }
+
+  .title2.on{
+    opacity: 1;
+  }
+</style>
+<body>
+  <div class="but">
+    <ul>
+      <li><a href="#">ELLE</a></li>
+      <li><a href="#">COSMOPOLITAN</a></li>
+      <li><a href="#">Harper's BAZAAR</a></li>
+      <li><a href="#">ESQUIRE</a></li>
+      <li><a href="#">STUDIO DOT</a></li>
+      <li><a href="#">YEET</a></li>
+    </ul>
+    <div class="title">
+      
+    </div>
+  </div>
+  <div class="title2">
+    <!-- <img src="HLL/img_visual1.png" alt=""> -->
+  </div>
+  <script>
+    let btn = document.querySelectorAll(".but ul li");
+    let title = document.querySelectorAll(".but .title");
+    let title2 = document.querySelectorAll(".title2");
+    btn[0].querySelector("a").classList.add("on");
+    title[0].querySelector(".title").classList.add("on");
+    title2[0].querySelector(".title2").classList.add("on");
+    
+    title.forEach(function(v,k){
+      v.style.background = "url(HLL/title" + (k+1) + ".svg)";
+    })
+
+    title2.forEach(function(v,k){
+      v.style.background = "url(HLL/img_visual" + (k+1)+ ".png)";
+    })
+
+    function buttonmy(){
+      btn.forEach(function(v,k){
+        v.querySelector("a").classList.remove("on");
+      })
+    }
+
+    btn.forEach(function(v,k){
+      v.onclick = function(e){
+        e.preventDefault();
+        buttonmy();
+        btn[k].querySelector("a").classList.add("on");
+      
+        title.forEach(function(v,k){
+          v.classList.remove("on");
+          v.querySelector(".title").classList.remove("on");
+        })
+
+        title[k].classList.add("on");
+        title[k].querySelector(".title").classList.add("on");
+
+        title2.forEach(function(v,k){
+          v.classList.remove("on");
+          v.querySelector(".title2").classList.remove("on");
+        })
+        
+        title2[k].classList.add("on");
+        title2[k].querySelector(".title2").classList.add("on");
+      }
+    })
+  </script>
+</body>
+</html>

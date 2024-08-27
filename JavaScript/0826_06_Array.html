@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <p>red</p>
+  <p>green</p>
+  <p>blue</p>
+  <p>gray</p>
+  <div>photo1</div>
+  <div>photo2</div> 
+  <div>photo3</div>
+  <div>photo4</div>
+  <!-- <img src="../images/photo1.jpg" alt=""> -->
+  <script>
+    const color = ["red", "green", "blue", "gray"];
+    let p = document.querySelectorAll("p");
+    p.forEach(function(v,k){
+      v.style.backgroundColor = color[k];
+    })
+
+    const photo = ["photo1.jpg", "photo2.jpg", "photo3.jpg", "photo4.jpg"];
+    let d = document.querySelectorAll("div");
+    d.forEach(function(v,k){
+      v.style.backgroundImage = "url(../images/" + photo[k] + ")";
+    })
+  </script>
+</body>
+</html>
