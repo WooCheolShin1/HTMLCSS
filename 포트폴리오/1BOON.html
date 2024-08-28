@@ -345,6 +345,80 @@
     padding-left: 45px;
   }
 
+  .foot{
+    width: 100%;
+    padding: 25px 0;
+    background: #fba51c;
+  }
+
+  .foot .inner{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    top: 50%;
+    left: 0;
+    transform: translateY(-10%);
+  }
+
+  .foot > .inner a {
+    color: #fff;
+    padding-left: 35px;
+    font-size: 23px;
+    letter-spacing: -1px;
+    background: url(images/tel.png) no-repeat left center;
+    font-weight: bold;
+  }
+
+  .foot .inner a span {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .foot > .inner .inner_input input{
+    padding: 0 20px;
+    border: 1px solid #ffe2b5;
+    background: none;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: -1px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .foot > .inner .inner_input input:focus{
+    outline: none;
+  }
+
+  .foot > .inner .inner_input input::placeholder{
+    color: #fff;
+  }
+
+  .foot > .inner .inner_input input:first-child{
+    margin-left: 30px;
+    width: 210px;
+  }
+
+  .foot > .inner .inner_input input:nth-child(2){
+    width: 180px;
+  }
+
+  .foot > .inner .inner_input button {
+    width: 150px;
+    border: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background: #f28300;
+    vertical-align: middle;
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
   #footer{
     background: #222222;
   }
@@ -473,7 +547,7 @@
            </ul>
         </li>
         <div class="bg">
-        
+      
         </div>
       </ul>
       <div class="login">
@@ -543,6 +617,19 @@
       <h1>CAFEILBOON MENU</h1>
       <p>무인 시장의 인기 상승, 블루오션 무인카페! CAFEILBOON</p>
       <img src="https://cafeilboon.com/theme/default/images/main/main_sec03_img.png" alt="">
+    </div>
+  </div>
+  <div class="foot">
+    <div class="inner">
+      <a href="">
+          창업문의
+        <span>1533.1054</span>
+      </a>
+      <div class="inner_input">
+        <input type="text" placeholder="고객명">
+        <input type="text" placeholder="연락처(-없이 입력하세요)">
+        <button>창업상담문의</button>
+      </div>
     </div>
   </div>
   <footer id="footer">
