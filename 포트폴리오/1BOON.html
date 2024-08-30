@@ -345,13 +345,25 @@
     padding-left: 45px;
   }
 
-  .foot{
+
+  #footer{
+    background: #222222;
+  }
+
+  #footer #foot{
     width: 100%;
     padding: 25px 0;
     background: #fba51c;
+    position: static;
+    bottom: 0;
+    left: 0;
   }
 
-  .foot .inner{
+  #footer .fixed{
+    /* position: fixed; */
+  }
+
+  #footer #foot .inner{
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
@@ -360,7 +372,7 @@
     transform: translateY(-10%);
   }
 
-  .foot > .inner a {
+  #footer #foot > .inner > a {
     color: #fff;
     padding-left: 35px;
     font-size: 23px;
@@ -369,12 +381,17 @@
     font-weight: bold;
   }
 
-  .foot .inner a span {
+  #footer #foot .inner > a span {
     font-size: 35px;
     font-weight: bold;
   }
 
-  .foot > .inner .inner_input input{
+  #footer #foot > .inner .inner_input{
+    display: flex;
+    gap: 10px;
+  }
+
+  #footer #foot > .inner .inner_input input{
     padding: 0 20px;
     border: 1px solid #ffe2b5;
     background: none;
@@ -387,24 +404,50 @@
     box-sizing: border-box;
   }
 
-  .foot > .inner .inner_input input:focus{
+  #footer #foot > .inner .inner_input input:focus{
     outline: none;
   }
 
-  .foot > .inner .inner_input input::placeholder{
+  #footer #foot > .inner .inner_input input::placeholder{
     color: #fff;
   }
 
-  .foot > .inner .inner_input input:first-child{
+  #footer #foot > .inner .inner_input > input:first-child{
     margin-left: 30px;
     width: 210px;
   }
 
-  .foot > .inner .inner_input input:nth-child(2){
+  #footer #foot > .inner .inner_input input:nth-child(2){
     width: 180px;
   }
 
-  .foot > .inner .inner_input button {
+  #footer #foot > .inner .inner_input .notrobot{
+    height: 50px;
+    line-height: 45px;
+    width: 150px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 15px;
+    padding: 0 20px;
+  }
+
+  #footer #foot > .inner .inner_input .notrobot input {
+    border-radius: 2px;
+    background-color: #fff;
+    border: 2px solid #c1c1c1;
+    font-size: 1px;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+  }
+
+  #footer #foot > .inner .inner_input .notrobot label {
+    vertical-align: middle;
+  }
+
+  #footer #foot > .inner .inner_input button {
     width: 150px;
     border: 0;
     font-weight: 700;
@@ -419,8 +462,22 @@
     cursor: pointer;
   }
 
-  #footer{
-    background: #222222;
+  #footer #foot > .inner .inner_input .infocheck{
+    display: flex;
+    gap: 5px;
+    color: #fff;
+    line-height: 50px;
+    letter-spacing: -1px;
+    margin-left: 15px;
+  }
+
+  #footer #foot > .inner .inner_input .infocheck > a{
+    color: #fff;
+    font-weight: 700;
+  }
+
+  #footer #foot > .inner .inner_input .infocheck > a:hover{
+    text-decoration: underline;
   }
 
   #footer > .inner{
@@ -450,7 +507,7 @@
     font-size: 14px;
   }
 
-  #footer > .inner .footerwrap .footerwrap2 ul li a{
+  #footer > .inner .footerwrap .footerwrap2 ul li > a{
     color: #fff;
   }
 
@@ -619,20 +676,29 @@
       <img src="https://cafeilboon.com/theme/default/images/main/main_sec03_img.png" alt="">
     </div>
   </div>
-  <div class="foot">
-    <div class="inner">
-      <a href="">
-          창업문의
-        <span>1533.1054</span>
-      </a>
-      <div class="inner_input">
-        <input type="text" placeholder="고객명">
-        <input type="text" placeholder="연락처(-없이 입력하세요)">
-        <button>창업상담문의</button>
+  <footer id="footer">
+    <div id="foot" class="fixed">
+      <div class="inner">
+        <a href="">
+            창업문의
+          <span>1533.1054</span>
+        </a>
+        <div class="inner_input">
+          <input type="text" placeholder="고객명">
+          <input type="text" placeholder="연락처(-없이 입력하세요)">
+          <div class="notrobot">
+            <input type="checkbox" name="" id="">
+            <label>&nbsp;로봇이 아닙니다.</label>
+          </div>
+          <button>창업상담문의</button>
+           <div class="infocheck">
+            <input type="checkbox">
+            <label for="">개인정보수집 동의</label>
+            <a href="">[확인]</a>
+           </div>
+        </div>
       </div>
     </div>
-  </div>
-  <footer id="footer">
     <div class="inner">
       <div class="footerwrap">
         <div class="footerwrap2">

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul{
+      list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    .content{
+      width: 100%;
+      max-width: 1260px;
+      margin: 50px auto;
+    }
+
+    .content .content_title{
+      color: #D1A050;
+    }
+
+    .content .content_title h1,
+    .content .content_title p{
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .content ul.main li{
+      padding: 1.5rem 2rem;
+      font-size: 2.4rem;
+      color: #D1A050;
+      cursor: pointer;
+      border-bottom: 1px solid #D1A050;
+    }
+
+    .content ul.main li:first-child{
+      border-top: 1px solid #D1A050;
+    }
+
+    .content ul.main li:last-child{
+      border-bottom: none;
+    }
+
+    .content ul.main li .main_img img{
+      display: none;
+    }
+
+    .content ul.main li .main_img.on{
+      display: block;
+    }
+
+    .content ul.main li .main_img .inner{
+      padding: 7rem 4rem 8rem 4rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="content_title">
+      <h1>RETAIL</h1>
+      <p>Slices - Almond Base</p>
+    </div>
+    <ul class="main">
+      <li>
+        <p>
+          <i></i>
+          AMERICAN
+        </p>
+        <div class="main_img">
+          <div class="inner">
+            <img src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-ALMONDBASE-AMERICAN-pc.jpg" alt="">
+          </div>
+        </div>
+      </li>
+      <li>
+        <p>
+          <i></i>
+          CHEDDAR
+        </p>
+        <div class="main_img">
+          <div class="inner">
+            <img src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-ALMONDBASE-CHEDDAR-pc.jpg" alt="">
+          </div>
+        </div>
+      </li>
+      <li>
+        <p>
+          <i></i>
+          PROVOLONE
+        </p>
+        <div class="main_img">
+          <div class="inner">
+            <img src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-ALMONDBASE-PROVOLONE-pc.jpg" alt="">
+          </div>
+        </div>
+      </li>
+      <li>
+        <p>
+          <i></i>
+          PEPPER JACK
+        </p>
+        <div class="main_img">
+          <div class="inner">
+            <img src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-ALMONDBASE-PROVOLONE-pc.jpg" alt="">
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script>
+    let list = document.querySelectorAll(".content ul.main li");
+    let mainimg = document.querySelectorAll(".main_img");
+
+    list.forEach(function(v,k){
+      v.onclick = function(e){
+        e.preventDefault();
+        mainimg[k].classList.toggle("on");
+      }
+    });
+  </script>
+</body>
+</html>

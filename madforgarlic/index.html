@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{margin: 0;padding: 0;}
+
+  .content{width: 1504px;margin: 50px auto;}
+
+  .content > .inner{width: 100%;display: flex;}
+
+  .content .inner .left,
+  .content .inner .right{position: relative;cursor: pointer;overflow: hidden;width: 50%;height: 776px;}
+
+  .content .inner .left .left_img,
+  .content .inner .right .right_img{transition: 0.5s;}
+
+  .content .inner .left .left_img:hover,
+  .content .inner .right .right_img:hover{transform: matrix(1.1, 0, 0, 1.1, 0, 0);object-fit: cover;}
+
+  .content .inner .left .left_txt,
+  .content .inner .right .right_txt{position: absolute;top: 43%;left: 40%;color: #fff;text-align: center;word-break: keep-all;}
+
+  .content .inner .left .left_txt h1,
+  .content .inner .right .right_txt h1{font-size: 45px;font-weight: 800;}
+
+  .content .inner .left .left_txt p,
+  .content .inner .right .right_txt p{
+    margin-top: 10px; font-size: 15px;
+  }
+
+</style>
+<body>
+  <div class="content">
+    <div class="inner">
+      <div class="left">
+        <div class="left_img">
+          <img src="https://cdnt.madforgarlic.com/madforgarlic/media/web/event/201610/18/47111ab2f40f77d358f4a6c63e85836d.png" alt="">
+        </div>
+        <div class="left_txt">
+          <h1>SEARCH</h1>
+          <p>매드포갈릭 매장 찾기</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right_img">
+          <img src="https://cdnt.madforgarlic.com/madforgarlic/media/web/event/201610/18/2c32239dae448f6e3dfed815151b731b.png" alt="">
+        </div>
+        <div class="right_txt">
+          <h1>CONCEPT</h1>
+          <p>매드포갈릭 컨셉이미지</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

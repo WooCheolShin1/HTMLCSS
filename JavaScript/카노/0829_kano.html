@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    .kano{
+      display: flex;
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .kano .kano1,
+    .kano .kano2{
+      width: 100%;
+      max-width: 650px;
+    }
+
+    .kano .kano1 .title h2{
+      font-size: 54px;
+      font-weight: normal;
+    }
+
+    .kano .list ul li{
+      display: flex;
+      padding: 39px 120px 39px 65px;
+      position: relative;
+    }
+
+    .kano .list ul li > span{
+      position: relative;
+      width: 83px;
+      height: 93px;
+      margin-right: 35px;
+    }
+
+    .kano .list ul li:first-child > span{
+      background: url(images/easy_story_black.png) no-repeat center;
+    }
+
+    .kano .list ul li:nth-child(2) > span{
+      background: url(images/petstler_black.png) no-repeat center;
+    }
+
+    .kano .list ul li:nth-child(3) > span{
+      background: url(images/homecare_black.png) no-repeat center;
+    }
+
+    .kano .list ul li p:first-child{
+      position: relative;
+      margin-right: 35px;
+    }
+
+    .kano .list ul li p:nth-child(2){
+      font-size: 28px;
+    }
+    
+    .kano .list ul li p:nth-child(2) span{
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="kano">
+    <div class="kano1">
+      <div class="title">
+        <h2>카노와 함께하는<br>브랜드를 소개합니다.</h2>
+      </div>
+      <div class="list">
+        <ul>
+          <li>
+            <span></span>
+            <p>이지스토리<br>
+              <span>산뜻한 일상의 이야기를 전하는 정직한 브랜드입니다.</span></p>
+          </li>
+          <li>
+            <span></span>
+            <p>페슬러<br>
+              <span>반려동물과 함계하는 우리의 일상을 위한 브랜드입니다.</span></p>
+          </li>
+          <li>
+            <span></span>
+            <p>홈케어<br>
+              <span>보다 나은 홈 라이프를 위한 방법을 만드는 브랜드입니다.</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="kano2">
+      <img src="images/easy_story_image.jpg" alt="">
+    </div>
+  </div>
+</body>
+</html>
