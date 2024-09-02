@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+    /* body{
+      height: 1000px;
+      cursor: url(../images/twitter.svg), auto;
+    } */
+
+    body{
+      height: 3000px;
+    }
+
+    .custom{
+      position: fixed;
+      left: -50px;
+      top: -50px;
+      width: 20px;
+      height: 20px;
+      background: green;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 999;
+      animation: circle 1s infinite;
+    }
+
+    .con{
+      height: 500px;
+      border: 1px solid;
+      margin: 100px;
+      cursor: none;
+    }
+
+    .con1{
+      height: 500px;
+      border: 1px solid red;
+      margin: 100px;
+      cursor: url(../images/twitter.svg), auto;
+    }
+
+    @keyframes circle {
+      0%{
+        transform: scale(1);
+      }
+
+      50%{
+        transform: scale(3)
+      }
+
+      100%{
+        transform: scale(1);
+      }
+    }
+	</style>
+</head>
+<body>
+  <p id = "p01"></p>
+  <button>text</button>
+  <input type="text" id="demo">
+  <script>
+   function myFunction(){
+    const message = document.getElementById("p01");
+    message.innerHTML = "";
+    let x = document.getElementById("demo").value;
+
+    try { 
+        if(x == "")  throw "is empty";
+        if(isNaN(x)) throw "is not a number";
+        x = Number(x);
+        if(x > 10)   throw "is too high";
+        if(x < 5)  throw "is too low";
+        message.innerHTML = "당신이 입력한 숫자는 5에서 10사이 숫자입니다."
+      }
+  catch(err) {
+    message.innerHTML = "Input " + err;
+    }
+
+    finally {
+      document.getElementById("demo").value = "";
+   }
+  }
+
+  document.querySelector("button").onclick = function(){
+    myFunction();
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="fname">
+  <script>
+    let x = document.getElementById("fname");
+    // x.onchange = function(){
+    //   this.value = this.value.toUpperCase();
+    //   //toUpperCase(); 대문자로 바꿔주는거 ㅇㅇ
+    //   console.log(xvalue);
+    // }
+
+    // x.onkeydown = function(e){
+    //   console.log(e.keyCode);
+    // }
+    //키보드의 키를 눌렀을때 발생하는 이벤트 ㅇㅇ
+    // keydown, keypress 키를 누르고 있을때도 이벤트 발생 ㄱㄴ 근데 keypress는 alt, ctrl, 방향키도 keyCode 값이 반환이 안됨
+
+    // x.onkeypress = function(e){
+    //   console.log(e.keyCode);
+    // }
+
+    x.onkeyup = function(e){
+      console.log(e.keyCode);
+    }
+    //keyup은 눌렀다가 뗐을때 이벤트가 발생한다 ㅇㅇ
+  </script>
+</body>
+</html>

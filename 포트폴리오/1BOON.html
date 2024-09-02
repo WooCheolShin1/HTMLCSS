@@ -232,9 +232,15 @@
     margin: 40px 0 50px;
   }
 
-  .wrap .button li{
+  .wrap .button li a{
     font-size: 20px;
     font-weight: 500;
+  }
+
+  .wrap .button li a.on{
+    color: #f28300;
+    text-decoration: underline;
+    font-weight: bold;
   }
 
   .wrap .wrapimage {
@@ -242,14 +248,20 @@
   }
 
   .wrap .wrapimage ul{
+    position: relative;
     display: flex;
     gap: 30px;
     justify-content: space-between;
+    opacity: 0;
   }
 
   .wrap .wrapimage ul li {
     text-align: center;
     font-weight: 700;
+  }
+
+  .wrap .wrapimage ul.on{
+    opacity: 1;
   }
 
   .wrap .wrapimage ul li p:nth-of-type(1){
@@ -659,6 +671,28 @@
           <p>아메리카노</p>
         </li>
       </ul>
+      <ul>
+        <li>
+          <img src="images/coffee1.png" alt="">
+          <p>COFFEE2</p>
+          <p>아이스 아인슈페너</p>
+        </li>
+        <li>
+          <img src="images/coffee2.png" alt="">
+          <p>COFFEE2</p>
+          <p>에스프레소</p>
+        </li>
+        <li>  
+          <img src="images/coffee3.png" alt="">
+          <p>COFFEE2</p>
+          <p>에스프레소 더블샷</p>
+        </li>
+        <li>  
+          <img src="images/coffee4.png" alt="">
+          <p>COFFEE2</p>
+          <p>아메리카노</p>
+        </li>
+      </ul>
       <button class="arrowright">
       </button>
     </div>
@@ -723,5 +757,30 @@
       </div>
     </div>
   </footer>
+  <script>
+    let btn = document.querySelectorAll(".wrap .button li");
+    let ilboonmenu = document.querySelectorAll(".wrap .wrapimage")
+    btn[0].querySelector("a").classList.add("on");
+
+    btn.forEach(function(v,k){
+      v.onclick = function(e){
+        e.preventDefault();
+        buttondelete();
+        btn[k].querySelector("a").classList.add("on");
+      }
+    })
+
+    function buttondelete(){
+      btn.forEach(function(v,k){
+        v.querySelector("a").classList.remove("on");
+      })
+    }
+
+    function imagedelete(){
+      ilboonmenu.forEach(function(v,k){
+        v.querySelector("ul").classList.remove("on");
+      })
+    }
+  </script>
 </body>
 </html>
