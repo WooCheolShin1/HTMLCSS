@@ -16,7 +16,6 @@ a{
 body{
   background-image: url(https://cafeilboon.com/theme/default/images/main/main_sec01_bg.jpg);
 }
-
 /* video{
   overflow: hidden;
   position: fixed;
@@ -208,7 +207,7 @@ ul.sub > li:hover a{
 .title h1{
   text-align: center;
   font-size: 50px;
-  color: #f28300;
+  color: #fba51c;
 }
 
 .wrap{
@@ -230,12 +229,13 @@ ul.sub > li:hover a{
 
 .wrap .button li a{
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 28px;
+  color: #000;
 }
 
 .wrap .button li a.on{
-  color: #f28300;
+  color: #fba51c;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -253,7 +253,7 @@ ul.sub > li:hover a{
   justify-content: space-between;
   width: 1300px;
   height: 100%;
-  opacity: 0
+  opacity: 0;
 }
 
 .wrap .wrapimage .swiper ul li {
@@ -277,15 +277,20 @@ ul.sub > li:hover a{
 .wrap .wrapimage .swiper ul li p:nth-of-type(1){
   font-size: 16px;
   line-height: 24px;
-  color: #fba51c;
+  color: #f28300;
   letter-spacing: 0.5px;
+  font-weight: 700;
 }
 
 .wrap .wrapimage .swiper ul li p:nth-of-type(2){
   font-size: 19px;
   line-height: 30px;
-  color: #333333;
+  color: #000;
   letter-spacing: -1px;
+}
+
+.swiper-wrapper {
+	transition-timing-function: linear;
 }
 
 .arrowleft{
@@ -389,7 +394,7 @@ ul.sub > li:hover a{
 }
 
 #footer .fixed{
-  /* position: fixed; */
+  /* position: absolute; */position: sticky;
 }
 
 #footer #foot .inner{

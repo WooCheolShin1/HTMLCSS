@@ -42,16 +42,17 @@
     var swiper = new Swiper('.wrapimage .swiper', {
       slidesPerView: 4,
       loop: true,
-      speed: 600,
+      speed: 500,
       observer: true,
       observeParents: true,
       observeSlideChildren: true,
+      freemode: true,
       navigation: {
         nextEl: '.arrowright',
         prevEl: '.arrowleft',
       },
       autoplay: {
-        delay : 3000,
-        disableOnInteraction : false,  
+        delay: 3000,
+        disableOnInteraction : false,
       },
     });
