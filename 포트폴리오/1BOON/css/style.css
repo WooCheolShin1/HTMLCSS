@@ -47,6 +47,7 @@ header{
   width: 100%;
   padding: 0px 50px;
   display: flex;
+  z-index: 999;
 }
 
 .list > ul{
@@ -294,7 +295,7 @@ ul.sub > li:hover a{
 }
 
 .arrowleft{
-  background: url(../images/arrowleft.png);
+  background: url(../images/main/arrowleft.png);
   width: 70px;
   height: 70px;
   transform: translateY(-50%);
@@ -306,7 +307,7 @@ ul.sub > li:hover a{
 }
 
 .arrowright{
-  background: url(../images/arrowright.png);
+  background: url(../images/main/arrowright.png);
   width: 70px;
   height: 70px;
   transform: translateY(-50%);
@@ -323,7 +324,7 @@ ul.sub > li:hover a{
 }
 
 .wrap2{
-  background: url(../images/main2.jpg) no-repeat center / cover;
+  background: url(../images/main/main2.jpg) no-repeat center / cover;
   padding: 180px 0 190px;
   text-align: center;
 }
@@ -351,7 +352,7 @@ ul.sub > li:hover a{
 }
 
 .wrap3{
-  background: url(../images/main3.jpg) no-repeat center / cover;
+  background: url(../images/main/main3.jpg) no-repeat center / cover;
   padding: 130px 0 100px;
 }
 
@@ -411,7 +412,7 @@ ul.sub > li:hover a{
   padding-left: 35px;
   font-size: 23px;
   letter-spacing: -1px;
-  background: url(../images/tel.png) no-repeat left center;
+  background: url(../images/main/tel.png) no-repeat left center;
   font-weight: bold;
 }
 
@@ -573,4 +574,28 @@ ul.sub > li:hover a{
   font-size: 12px;
   margin-top: 5px;
   color: #fff;
+}
+
+/*로그인 부분*/
+
+.content{
+  background-color: #fff;
+  height: 570px;
+}
+
+.loginsub{
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  background-image: url(https://cafeilboon.com/theme/default/images/sub/sub_visual_90.jpg);
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.loginsub h1{
+  padding: 150px 0;
+  font-weight: 700;
+  font-size: 54px;
 }

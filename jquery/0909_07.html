@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function(){
+      $("img").hide();
+      let bool = true;
+      $("p:first").click(function(){
+        if(bool){
+          $("img").show();
+          $("p:first").text("이미지숨기기");
+        }
+        else{
+          $("img").hide();
+          $("p:first").text("이미지보이기");
+        }
+        bool = !bool;
+      })
+    });
+  </script>
+</head>
+<body>
+  <p>이미지보이기</p>
+  <p><img src="../images/photo1.jpg" alt=""></p>
+</body>
+</html>
