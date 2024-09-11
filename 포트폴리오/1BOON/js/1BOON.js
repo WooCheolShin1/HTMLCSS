@@ -1,3 +1,18 @@
+    //===============================헤더 부분===================================//
+    let wheellist = document.getElementById("scrollList");
+
+    $(window).scroll(function() {
+      let wheelscroll = $(document).scrollTop();
+      console.log(wheelscroll);
+      if(wheelscroll == 0){
+        wheellist.style.backgroundColor = "transparent";
+      }
+      else if(wheelscroll > 0){
+        wheellist.style.backgroundColor = "#fff";
+      }
+    });
+    //=========================================================================//
+    
     let btn = document.querySelectorAll(".wrap .button li");
     let ilboonmenu = document.querySelectorAll(".wrap .wrapimage .swiper .swiper-wrapper");
     let sil = document.querySelector(".wrap .wrapimage");
@@ -13,7 +28,7 @@
         btn[k].querySelector("a").classList.add("on");
         imagedelete();
         ilboonmenu[k].classList.add("on");
-        console.log(ilboonmenu[k].childElementCount);
+        // console.log(ilboonmenu[k].childElementCount);
 
         if(ilboonmenu[k].childElementCount < 5){
           arrowleft.classList.add("off");
@@ -56,3 +71,6 @@
         disableOnInteraction : false,
       },
     });
+
+  //  let options = 'width=400, height=400'
+  //  window.open('popup.html', '_blank', options)

@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="../1BOON/images/main/1minuteicon.png" type="image/x-icon" />
 </head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <body>
     <header>
-      <div class="list" onscroll="headbar()" id="scrollList">
+      <div class="list" id="scrollList">
         <div class="head">
           <a href="#">
             <img src="images/main/logo.png" alt="">
@@ -103,8 +104,8 @@
         <li><a href="">FRUITY COFFEE</a></li>
         <li><a href="">ETC</a></li>
       </ul>
-      <button class="arrowleft">
-      </button>
+        <button class="arrowleft">
+        </button>
       <div class="wrapimage">
         <!--------------------------커피 구간----------------------->
         <div class="swiper">
@@ -404,9 +405,24 @@
         </div>
         <!--------------------------------------------------------->
 
+        <!--------------------------블랙티 구간--------------------->
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            
+          </ul>
+        </div>
+        <!--------------------------------------------------------->
+
+        <!--------------------------그린티 구간--------------------->
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            
+          </ul>
+        </div>
+        <!--------------------------------------------------------->
       </div>
-      <button class="arrowright">
-      </button>
+        <button class="arrowright">
+        </button>
     </div>
   <div class="wrap2">
     <div class="inner">
@@ -469,16 +485,5 @@
     </div>
   </footer>
   <script type="text/javascript" src="js/1BOON.js"></script>
-  <script>
-    let wheel;
-    let wheellist = document.getElementById("scrollList");
-
-    window.addEventListener('wheel', (e) => {
-    if (!wheel) {
-      e.preventDefault();
-    	wheellist.style.backgroundColor = "#fff";
-    }
-  })
-  </script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function(){
+      // $("#demo").dblclick(function(){
+      //   $(this).text("더블클릭");
+      // }).mouseenter(function(){
+      //   $(this).text("마우스올림");
+      // }).mouseleave(function(){
+      //   $(this).text("마우스나감");
+      // });
+
+    //   $("#demo").on({
+    //     dblclick:function(){
+    //       $(this).text("더블클릭")
+    //     },
+    //     mouseenter:function(){
+    //       $(this).text("마우스올림");
+    //     },
+    //     mouseleave:function(){
+    //       $(this).text("마우스나감");
+    //     }
+    //   })
+
+    $("#demo").on("click", function(){
+      console.log(i++);
+      if(i>=5){
+        $(this).off("click")
+      }
+    });
+    $("#demo1").one("click", function(){
+      console.log(i++);
+    })
+  });
+  </script>
+</head>
+<body>
+  <p id="demo">제이쿼리</p>
+  <p id="demo1">제이쿼리</p>
+</body>
+</html>

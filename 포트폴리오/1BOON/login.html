@@ -7,20 +7,68 @@
   <title>1분카페 | 로그인</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="../1BOON/images/main/1minuteicon.png" type="image/x-icon" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <style>
+    html{
+      overflow: hidden;
+    }
+    
     .list{
       position: absolute;
     }
-    
-    .loginbox{
 
+    .loginbox{
+      width: 100%;
+    }
+
+    form {
+      width: 480px;
+      height: 320px;
+      justify-content: space-between;
+      margin: 150px auto;
+    }
+
+    fieldset{
+      padding: 20px;
+    }
+
+    body{
+      background-image: none;
+    }
+
+    .content .loginbox form #login_idpw
+    {
+      height: 50px;
+      margin: 0 0 10px;
+      width: 100%;
+    }
+
+    .content .loginbox form #login_button {
+      background-color: #333;
+      color: #fff;
+      width: 100%;
+      margin: 0 0 20px auto;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    input{
+      font-size: 15px;
+    }
+
+    input::placeholder{
+      font-size: 15px;
+    }
+
+    button{
+      font-size: 15px;
     }
 
   </style>
 </head>
 <body>
   <header>
-    <div class="list">
+    <div class="list" id="scrollList">
       <div class="head">
         <a href="1BOON.html">
           <img src="images/main/logo.png" alt="">
@@ -91,7 +139,15 @@
   </div>
   <div class="content">
     <div class="loginbox">
-      
+      <form action="">
+        <fieldset>
+          <input type="text" size="20" maxlength="20" placeholder="아이디" id="login_idpw" required><br>
+          <input type="password" size="20" maxlength="20" placeholder="비밀번호" id="login_idpw" required><br>
+          <button id="login_button">로그인</button><br>
+          <input type="radio" name="idsave"> 아이디저장
+          <input type="radio" name="autologin"> 자동로그인
+        </fieldset>
+      </form>
     </div>  
   </div>
   <footer id="footer">
@@ -141,5 +197,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/1BOON.js"></script>
 </body>
 </html>

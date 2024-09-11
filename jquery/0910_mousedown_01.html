@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    // $(document).ready(function(){
+
+    // });
+
+    $(function(){
+      // $("#demo").hover(function(){
+      //   $(this).text("마우스올림");
+      // }, function(){
+      //   $(this).text("마우스나감");
+      // });
+
+      // $("#demo").mousedown(function(){
+      //   console.log("mousedown");
+      // })
+
+      $("#demo").mouseup(function(){
+        console.log("mouseup");
+      })
+
+      $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+      })
+
+      $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+      });
+    });
+  </script>
+</head>
+<body>
+  <p id="demo">제이쿼리</p>
+  <input type="text">
+  <input type="text">
+</body>
+</html>

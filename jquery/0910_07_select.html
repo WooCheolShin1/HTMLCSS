@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function(){
+      $("input").select(function(){
+        //더블클릭해서 요소 선택됐을때
+        alert("졸려..");
+      });
+
+      $("#area").change(function(){
+        alert("개졸려");
+      })
+
+      $("form").submit(function(){
+        //form 태그에 submit 버튼을 클릭할시 이벤트
+        alert("양식 제출 성공 ㅇㅇ");
+      })
+
+      $("button").click(function(){
+        $("form").trigger("submit");
+      });
+    });
+  </script>
+</head>
+<body>
+  <form action="">
+    <select name="area" id="area">
+      <option value="선택안함">선택안함</option>
+      <option value="서울">서울</option>
+      <option value="대전">대전</option>
+    </select>
+    <input type="text" value="자바스크립트">
+    <input type="submit">
+  </form>
+</body>
+</html>

@@ -16,10 +16,6 @@ a{
 body{
   background-image: url(https://cafeilboon.com/theme/default/images/main/main_sec01_bg.jpg);
 }
-/* video{
-  overflow: hidden;
-  position: fixed;
-} */
 
 header{
   height: 10%;
@@ -254,6 +250,7 @@ ul.sub > li:hover a{
   justify-content: space-between;
   width: 1300px;
   height: 100%;
+  margin: 0 auto;
   opacity: 0;
 }
 
@@ -298,8 +295,7 @@ ul.sub > li:hover a{
   background: url(../images/main/arrowleft.png);
   width: 70px;
   height: 70px;
-  transform: translateY(-50%);
-  top: 55%;
+  transform: translateY(140px);
   left: 100px;
   position: absolute;
   border: 0;
@@ -310,8 +306,7 @@ ul.sub > li:hover a{
   background: url(../images/main/arrowright.png);
   width: 70px;
   height: 70px;
-  transform: translateY(-50%);
-  top: 55%;
+  transform: translateY(-360px);
   right: 100px;
   position: absolute;
   border: 0;
@@ -580,7 +575,7 @@ ul.sub > li:hover a{
 
 .content{
   background-color: #fff;
-  height: 570px;
+  height: 400px;
 }
 
 .loginsub{
