@@ -594,3 +594,57 @@ ul.sub > li:hover a{
   font-weight: 700;
   font-size: 54px;
 }
+
+#loginbody{
+  background-image: none;
+}
+
+.content .loginbox form #login_idpw{
+  height: 50px;
+  margin: 0 0 10px;
+  width: 97.3%;
+}
+
+.content .loginbox form #login_button {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  margin: 0 0 20px auto;
+  height: 50px;
+  cursor: pointer;
+}
+
+.loginfieldset{
+  padding: 20px;
+}
+
+.loginfieldset input{
+  font-size: 15px;
+  padding: 0 0 0 10px;
+}
+
+.loginfieldset input::placeholder{
+  font-size: 15px;
+}
+
+.loginfieldset input:focus{
+  outline: none;
+}
+
+.loginfieldset button{
+  font-size: 15px;
+}
+
+.loginform {
+  width: 480px;
+  height: 320px;
+  justify-content: space-between;
+  margin: 150px auto;
+}
+
+.required{
+  background-image: url(../images/main/require.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: right top !important;
+  border: 1px solid #ccc;
+}
