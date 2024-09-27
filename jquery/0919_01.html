@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function(){
+      $(".list").append('<li>리스트5</li>').prepend('<li>리스트0</li>');
+      $("body").append($(".list").clone());
+      //append는 뒤에 추가, prepend는 앞에 추가, clone은 그냥 아예 통째로 복사한다고함
+      $('<p>문단태그</p>').appendTo("body");
+      $('<p>문단태그</p>').prependTo("body");
+      //appendTo, prependTo는 어디에 추가하는지 대상을 정함 물론 appendTo는 물론 뒤에 ㅇㅇ
+      $(".list").wrap("<section></section>");
+      $(".list li").wrapInner("<div></div>");
+      $(".list li").wrapAll("<div></div>");
+      // $(".new").after('<p>문단태그</p>');
+      // $(".new").before('<p>문단태그</p>');
+      $('<p>문단태그</p>').insertAfter(".new");
+      $('<p>문단태그</p>').insertBefore(".new");
+    })
+  </script>
+</head>
+<body>
+  <ul class="list">
+    <li class="new">리스트1</li>
+    <li>리스트2</li>
+    <li>리스트3</li>
+    <li>리스트4</li>
+  </ul>
+</body>
+</html>
