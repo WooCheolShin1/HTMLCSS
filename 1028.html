@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    body{
+      height: 500px;
+    }
+
+    .quickmenu{
+      position: absolute;
+      top: 120px;
+      right: 50px;
+      width: 100px;
+      height: 300px;
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="quickmenu">
+  
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25707.825796523437!2d127.35686283476561!3d36.34919370000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654be14ac762f3%3A0xeb905080ab28e9bf!2z7Jik65287YG0QkQ!5e0!3m2!1sko!2skr!4v1730101233466!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function (){
+      $(window).scroll(function(){
+        let scrtop = $(document).scrollTop();
+        console.log(scrtop);
+        if (scrtop > 0){
+          $(".quickmenu").stop().animate({
+            top: scrtop + 120 + "px"
+          }, 500);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
